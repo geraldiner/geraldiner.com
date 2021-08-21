@@ -15,14 +15,15 @@ const server = new ApolloServer({
 	context: () => {
 		return {
 			token: process.env.GITHUB_TOKEN,
+			env: process.env.NODE_ENV,
 		};
 	},
 });
 
-server.listen().then(() => {
+server.listen(
+	process.env.PORT,
 	console.log(`
     Server is running!
     Listening on http://localhost:4000
-    Explore at https://studio.apollographql.com/sandbox
-  `);
-});
+    Explore at https://studio.apollographql.com/sandbox`),
+);
