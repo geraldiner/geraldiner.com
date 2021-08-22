@@ -1,22 +1,16 @@
 import React from "react";
-import { useQuery } from "@apollo/client";
-import { AboutQuery } from "../queries/github-queries";
-import Loading from "./Loading";
 
 const About = () => {
-	const { loading, error, data } = useQuery(AboutQuery);
-	const me = data && data.getAbout;
-
 	return (
-		<div>
-			<h1>This is the About section</h1>
-			<Loading loading={loading} source="GitHub" />
-			{error && `Error! ${error.message}`}
-			{data &&
-				Object.keys(me).map((k, index) => {
-					return <div key={index}>{`${k}: ${me[k]}`}</div>;
-				})}
-		</div>
+		<>
+			<div className="bg-white rounded-b-md p-3 mx-4 lg:mx-16">
+				<h2 className="text-3xl my-3">Curiosity-driven Software Engineer</h2>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nobis debitis similique blanditiis beatae quasi earum iusto molestias
+					tenetur, assumenda necessitatibus autem laudantium quaerat eaque, asperiores, esse magni eius facere?
+				</p>
+			</div>
+		</>
 	);
 };
 

@@ -2,25 +2,32 @@ import React from "react";
 import { useQuery } from "@apollo/client";
 import { FeaturedReposQuery } from "../queries/github-queries";
 import Loading from "./Loading";
+import ProjectCard from "./ProjectCard";
 
 const FeaturedRepos = () => {
 	const { loading, error, data } = useQuery(FeaturedReposQuery);
 	const featuredRepos = data?.getFeaturedRepos;
 
 	return (
-		<div>
-			<h1>This is the FeaturedRepos section</h1>
+		<div className="p-3 mx-4 lg:mx-16">
+			<h1 className="my-3 text-4xl text-center uppercase font-bold">Featured Repos</h1>
 			<Loading loading={loading} source="GitHub" />
 			{error && `Error! ${error.message}`}
 			{data &&
 				featuredRepos.map((r, index) => {
 					return (
-						<div key={index}>
-							<h1>{r.name}</h1>
-							{Object.keys(r).map((k, index) => {
-								return <div key={index}>{`${k}: ${r[k]}`}</div>;
-							})}
-						</div>
+						<ProjectCard
+							key={index}
+							name={r.name}
+							commitCount={r.commitCount}
+							description={r.description}
+							homepageUrl={r.homepageUrl}
+							languages={r.languages}
+							imageUrl={r.openGraphImageUrl}
+							topics={r.topics}
+							updatedAt={r.updatedAt}
+							repoUrl={r.url}
+						/>
 					);
 				})}
 		</div>

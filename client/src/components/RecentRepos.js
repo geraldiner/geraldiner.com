@@ -2,25 +2,32 @@ import React from "react";
 import { useQuery } from "@apollo/client";
 import { RecentReposQuery } from "../queries/github-queries";
 import Loading from "./Loading";
+import ProjectCard from "./ProjectCard";
 
 const RecentRepos = () => {
 	const { loading, error, data } = useQuery(RecentReposQuery);
 	const recentRepos = data?.getRecentRepos;
 
 	return (
-		<div>
-			<h1>This is the RecentRepos section</h1>
+		<div className="p-3 mx-4 lg:mx-16">
+			<h1 className="my-3 text-4xl text-center uppercase font-bold">Recent Repos</h1>
 			<Loading loading={loading} source="GitHub" />
 			{error && `Error! ${error.message}`}
 			{data &&
 				recentRepos.map((r, index) => {
 					return (
-						<div key={index}>
-							<h1>{r.name}</h1>
-							{Object.keys(r).map((k, index) => {
-								return <div key={index}>{`${k}: ${r[k]}`}</div>;
-							})}
-						</div>
+						<ProjectCard
+							key={index}
+							name={r.name}
+							commitCount={r.commitCount}
+							description={r.description}
+							homepageUrl={r.homepageUrl}
+							languages={r.languages}
+							imageUrl={r.openGraphImageUrl}
+							topics={r.topics}
+							updatedAt={r.updatedAt}
+							repoUrl={r.url}
+						/>
 					);
 				})}
 		</div>
