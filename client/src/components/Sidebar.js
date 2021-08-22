@@ -41,10 +41,12 @@ const Sidebar = () => {
 					})}
 				</section>
 				<section className="border-t-4 border-gray-900 my-3">
-					<div className="py-2 px-3 flex">
-						{/* <span className="mr-2" dangerouslySetInnerHTML={{ __html: me.status.emojiHTML }}></span>
-						<span className="text-sm">{`${me.status.message}`}</span> */}
-					</div>
+					{me && (
+						<div className="py-2 px-3 flex">
+							<span className="mr-2" dangerouslySetInnerHTML={{ __html: me.status.emojiHTML }}></span>
+							<span className="text-sm">{`${me.status.message}`}</span>
+						</div>
+					)}
 				</section>
 			</div>
 			{/* Mobile Parts */}
