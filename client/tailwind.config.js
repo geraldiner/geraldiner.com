@@ -4,6 +4,9 @@ module.exports = {
 	darkMode: false, // or 'media' or 'class'
 	theme: {
 		extend: {},
+		listStyleType: {
+			"leading-zero": "leading-zero",
+		},
 	},
 	variants: {
 		extend: {},

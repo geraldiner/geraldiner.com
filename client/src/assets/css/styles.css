@@ -2,5 +2,12 @@ body {
 	background-color: #60b99a;
 	background: linear-gradient(#60b99a, #faca66);
 	background-repeat: no-repeat;
-	height: 100vh;
+	min-height: 100vh;
+}
+
+@counter-style leading-zero {
+	system: cyclic;
+	symbols: "1" "2" "3" "4" "5" "6" "7" "8" "9";
+	prefix: "0";
+	suffix: " ";
 }
