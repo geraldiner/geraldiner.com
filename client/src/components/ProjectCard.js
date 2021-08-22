@@ -3,7 +3,7 @@ import React from "react";
 const ProjectCard = ({ name, commitCount, description, homepageUrl, languages, imageUrl, topics, updatedAt, repoUrl }) => {
 	return (
 		<>
-			<div className="text-center mx-2 my-8 lg:mx-16 lg:text-left">
+			<div className="text-center rounded-t-md mx-2 my-8 lg:mx-16 lg:text-left">
 				<div className="p-3 bg-white">
 					<h1 className="text-3xl my-3">
 						{name
