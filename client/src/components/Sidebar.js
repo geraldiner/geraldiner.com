@@ -1,4 +1,5 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Sidebar = () => {
 	const links = [
@@ -19,6 +20,20 @@ const Sidebar = () => {
 			"path": "/contact",
 		},
 	];
+	const socials = [
+		{
+			"name": "linkedin",
+			"link": "https://linkedin.com/in/geraldiner",
+		},
+		{
+			"name": "github",
+			"link": "https://github.com/geraldiner",
+		},
+		{
+			"name": "twitter",
+			"link": "https://twitter.com/geraldinedesue",
+		},
+	];
 	return (
 		<>
 			{/* Mobile Parts */}
@@ -33,25 +48,24 @@ const Sidebar = () => {
 				</div>
 			</div>
 			{/* Default Styles */}
-			<div className="text-center bg-white border-gray-900 border-4 rounded-md p-3 m-3 lg:absolute lg:w-64 lg:text-left">
-				<section id="top-desc">
-					<h1 className="hidden lg:text-4xl lg:block">Geraldine.</h1>
-					<h2 className="text-lg font-bold">Full-Stack Software Engineer</h2>
+			<div className="text-center bg-white border-gray-900 border-4 rounded-md lg:absolute lg:w-64 lg:text-left m-6 lg:mt-32 lg:ml-36">
+				<section id="top-desc" className="p-3 ">
+					<h1 className="hidden lg:text-5xl lg:block my-3">Geraldine.</h1>
+					<h2 className="text-2xl my-5">Full-Stack Software Engineer</h2>
 					<p>Using my knowledge and experience in design and development to do what I do best: bring joy to people's lives. ✨💖</p>
 				</section>
-				<nav className="">
-					<ul className="leading-zero">
-						{links.map(link => {
-							return (
-								<li>
-									<a href={link.path} className="block">
-										{link.name}
-									</a>
-								</li>
-							);
-						})}
-					</ul>
-				</nav>
+				<section id="social-links" className="flex justify-around">
+					{socials.map(social => {
+						return (
+							<a href={social.link} className="text-2xl p-3 text-yellow-400 rounded-sm">
+								<FontAwesomeIcon icon={["fab", social.name]} />
+							</a>
+						);
+					})}
+				</section>
+				<section className="border-t-4 border-gray-900 my-3">
+					<div className="p-3">Currently eating cheese</div>
+				</section>
 			</div>
 			{/* Mobile Parts */}
 			<div className="fixed left-0 bottom-0 lg:hidden">
