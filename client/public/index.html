@@ -16,6 +16,26 @@
     <title>Geraldine Ragsac | Front-End Software Engineer</title>
   </head>
   <body>
+    <form
+    name="contact"
+    action="/thanks"
+    method="POST"
+    data-netlify-honeypot="bot-field"
+    data-netlify-recaptcha="true"
+    data-netlify="true"
+  >
+      <input name="name" type="text" />
+
+
+
+      <input type="email" name="email" />
+
+
+      <textarea
+        name="message"
+      ></textarea>
+    <div data-netlify-recaptcha="true"></div>
+  </form>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>
