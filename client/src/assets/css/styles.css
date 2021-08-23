@@ -1,6 +1,9 @@
 body {
 	background-color: #60b99a;
-	background: linear-gradient(#60b99a, #faca66);
+	/* background: linear-gradient(#60b99a, #faca66); */
+	background: url("https://images.unsplash.com/photo-1490735891913-40897cdaafd1");
+	background-attachment: fixed;
+	background-size: cover;
 	background-repeat: no-repeat;
 	min-height: 100vh;
 }
@@ -22,11 +25,13 @@ body {
 }
 
 .accent {
-	color: #60b99a;
+	color: #20a89d;
 }
 
 .active {
-	background-color: #60b99a;
+	background-color: #20a89d;
+	font-weight: bold;
+	color: white;
 }
 
 @counter-style leading-zero {

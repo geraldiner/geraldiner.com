@@ -10,7 +10,7 @@ const RecentRepos = () => {
 
 	return (
 		<div className="p-3 mx-2 lg:mx-16">
-			<h1 className="my-3 text-4xl text-center uppercase font-bold">Recent Repos</h1>
+			<h1 className="text-white my-3 text-4xl text-center uppercase font-bold tracking-widest">Recent Repos</h1>
 			<Loading loading={loading} source="GitHub" />
 			{error && `Error! ${error.message}`}
 			{data &&

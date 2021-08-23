@@ -35,7 +35,7 @@ const ProjectCard = ({ name, commitCount, description, homepageUrl, languages, i
 						rel="noopener noreferrer"
 						className={`inline-block hover:bg-gray-600 ${
 							homepageUrl ? "w-1/2 rounded-bl-md" : "w-full rounded-b-md"
-						} p-3 bg-blue-500 text-white font-bold`}
+						} p-3 bg-blue text-white font-bold`}
 					>
 						{`</>`} Code
 					</a>
@@ -44,7 +44,7 @@ const ProjectCard = ({ name, commitCount, description, homepageUrl, languages, i
 							href={homepageUrl}
 							target="_blank"
 							rel="noopener noreferrer"
-							className="rounded-br-md inline-block w-1/2 p-3 bg-green-500 text-white font-bold hover:bg-gray-600"
+							className="rounded-br-md inline-block w-1/2 p-3 bg-yellow-400 text-white font-bold hover:bg-gray-600"
 						>
 							Live Site
 						</a>
