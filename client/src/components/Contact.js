@@ -10,10 +10,9 @@ const Contact = () => {
 					className="space-y-5"
 					action="/thanks"
 					method="POST"
-					netlify-honeypot="bot-field"
+					data-netlify-honeypot="bot-field"
 					data-netlify-recaptcha="true"
 					data-netlify="true"
-					netlify
 				>
 					<div className="hidden">
 						<label className="block mb-1 font-bold text-gray-500" htmlFor="bot-field">
