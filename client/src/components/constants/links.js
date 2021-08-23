@@ -2,18 +2,22 @@ export const LINKS = [
 	{
 		"name": "Projects",
 		"path": "/",
+		"exact": true,
 	},
 	{
 		"name": "About",
 		"path": "/about",
+		"exact": false,
 	},
 	{
 		"name": "Resume",
 		"path": "../assets/GeraldineRagsac_Resume_2021.pdf",
+		"exact": false,
 	},
 	{
 		"name": "Contact",
 		"path": "/contact",
+		"exact": false,
 	},
 ];
 

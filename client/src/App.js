@@ -20,14 +20,10 @@ function App() {
 				</div>
 				<div className="w-full lg:w-2/3 flex flex-col">
 					<TopNav />
-					<div className="mt-12">
+					<div className="mt-12 mb-24">
 						<Switch>
-							<Route path="/" exact>
-								<Main />
-							</Route>
-							<Route path="/about">
-								<About />
-							</Route>
+							<Route path="/" exact component={Main} />
+							<Route path="/about" component={About} />
 						</Switch>
 					</div>
 				</div>

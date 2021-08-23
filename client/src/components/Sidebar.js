@@ -2,6 +2,7 @@ import React from "react";
 import { useQuery } from "@apollo/client";
 import { AboutQuery } from "../queries/github-queries";
 import Loading from "./Loading";
+import NavLink from "./NavLink";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { LINKS, SOCIALS } from "./constants/links";
 
@@ -32,10 +33,10 @@ const Sidebar = () => {
 					<p className="text-sm lg:text-base">{data && me.bio}</p>
 				</section>
 				<section id="social-links" className="hidden lg:flex lg:justify-around ">
-					{SOCIALS.map(social => {
+					{SOCIALS.map((social, i) => {
 						return (
-							<a href={social.link} className="text-2xl p-3 text-yellow-400 rounded-sm">
-								<FontAwesomeIcon icon={["fab", social.name]} className={social.name} />
+							<a key={i} href={social.link} target="_blank" rel="noopener noreferrer" className="text-2xl p-3 rounded-sm">
+								<FontAwesomeIcon icon={["fab", social.name]} className={`${social.name}  hover:text-yellow-400`} />
 							</a>
 						);
 					})}
@@ -52,12 +53,8 @@ const Sidebar = () => {
 			{/* Mobile Parts */}
 			<div className="fixed left-0 bottom-0 lg:hidden">
 				<nav className="flex w-screen justify-around bg-white">
-					{LINKS.map(link => {
-						return (
-							<a href={link.path} className="bg-white py-5 px-3">
-								{link.name}
-							</a>
-						);
+					{LINKS.map((link, i) => {
+						return <NavLink key={i} index={i} label={link.name} to={link.path} exact={link.exact} />;
 					})}
 				</nav>
 			</div>

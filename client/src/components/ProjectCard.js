@@ -3,9 +3,9 @@ import React from "react";
 const ProjectCard = ({ name, commitCount, description, homepageUrl, languages, imageUrl, topics, updatedAt, repoUrl }) => {
 	return (
 		<>
-			<div className="text-center rounded-t-md mx-2 my-8 lg:mx-16 lg:text-left">
-				<div className="p-3 bg-white">
-					<h1 className="text-3xl my-3">
+			<div className="text-center my-8 lg:mx-16 lg:text-left">
+				<div className="w-full p-3 rounded-t-md bg-white">
+					<h1 className="text-2xl lg:text-3xl my-3">
 						{name
 							.split("-")
 							.map(w => w[0].toUpperCase().concat(w.slice(1)))
@@ -14,7 +14,7 @@ const ProjectCard = ({ name, commitCount, description, homepageUrl, languages, i
 					<p className="my-2">{description}</p>
 					<img className="my-4" src={imageUrl} alt={description} />
 					<p className="my-4">
-						Last updated <span className="accent font-bold">{updatedAt}</span> with <span class="accent font-bold">{commitCount} commits</span>
+						Last updated <span className="accent font-bold">{updatedAt}</span> with <span className="accent font-bold">{commitCount} commits</span>
 					</p>
 					{topics.length > 0 && (
 						<p className="py-3 border-t-2 border-gray-900">
@@ -31,13 +31,22 @@ const ProjectCard = ({ name, commitCount, description, homepageUrl, languages, i
 				<div className="flex-1 text-center">
 					<a
 						href={repoUrl ? repoUrl : `#`}
-						className={`rounded-bl-md inline-block ${homepageUrl ? "w-1/2" : "w-full"} p-3 bg-blue-500 text-white font-bold`}
+						target="_blank"
+						rel="noopener noreferrer"
+						className={`inline-block hover:bg-gray-600 ${
+							homepageUrl ? "w-1/2 rounded-bl-md" : "w-full rounded-b-md"
+						} p-3 bg-blue-500 text-white font-bold`}
 					>
 						{`</>`} Code
 					</a>
 					{homepageUrl && (
-						<a href={homepageUrl} className="rounded-br-md inline-block w-1/2 p-3 bg-green-500 text-white font-bold">
-							Live
+						<a
+							href={homepageUrl}
+							target="_blank"
+							rel="noopener noreferrer"
+							className="rounded-br-md inline-block w-1/2 p-3 bg-green-500 text-white font-bold hover:bg-gray-600"
+						>
+							Live Site
 						</a>
 					)}
 				</div>
