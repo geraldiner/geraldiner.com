@@ -32,13 +32,17 @@ const Contact = () => {
 
 				<form
 					name="contact"
+					method="POST"
 					action="/thanks"
 					className="space-y-5"
-					onSubmit={handleSubmit}
+					onSubmit="submit"
 					data-netlify-honeypot="bot-field"
 					data-netlify-recaptcha="true"
 					data-netlify="true"
 				>
+					<div>
+						<input type="hidden" name="form-name" value="contact" />
+					</div>
 					<div className="hidden">
 						<label className="block mb-1 font-bold text-gray-500" htmlFor="bot-field">
 							Don’t fill this out if you’re human: <input name="bot-field" />
