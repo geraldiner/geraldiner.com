@@ -10,7 +10,7 @@ const FeaturedRepos = () => {
 
 	return (
 		<div className="p-3 mx-2 lg:mx-16">
-			<Loading loading={loading} source="GitHub" />
+			<Loading className="w-full p-3 rounded-t-md bg-white" loading={loading} source="GitHub" />
 			{error && `Error! ${error.message}`}
 			{data &&
 				featuredRepos.map((r, index) => {

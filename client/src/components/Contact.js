@@ -17,7 +17,12 @@ const Contact = () => {
 			await fetch("/", {
 				method: "POST",
 				headers: { "Content-Type": "application/x-www-form-urlencoded" },
-				body: encode({ "form-name": "contact", ...this.state }),
+				body: encode({
+					"form-name": "contact",
+					"name": name,
+					"email": email,
+					"message": message,
+				}),
 			});
 		} catch (error) {
 			console.log(error);
@@ -46,14 +51,26 @@ const Contact = () => {
 						<label htmlFor="name" className="block mb-1 font-bold text-gray-500">
 							Name
 						</label>
-						<input name="name" type="text" className="form-input w-full border-2 border-gray-200 p-3 rounded outline-none focus:border-blue" value={name} onChange={(e) => setName(e.target.value)} />
+						<input
+							name="name"
+							type="text"
+							className="form-input w-full border-2 border-gray-200 p-3 rounded outline-none focus:border-blue"
+							value={name}
+							onChange={e => setName(e.target.value)}
+						/>
 					</div>
 
 					<div>
 						<label htmlFor="email" className="block mb-1 font-bold text-gray-500">
 							Email
 						</label>
-						<input type="email" name="email" className="form-input w-full border-2 border-gray-200 p-3 rounded outline-none focus:border-blue" value={email} onChange={(e) => setEmail(e.target.value)} />
+						<input
+							type="email"
+							name="email"
+							className="form-input w-full border-2 border-gray-200 p-3 rounded outline-none focus:border-blue"
+							value={email}
+							onChange={e => setEmail(e.target.value)}
+						/>
 					</div>
 
 					<div>
@@ -62,7 +79,9 @@ const Contact = () => {
 						</label>
 						<textarea
 							name="message"
-							className="form-textarea w-full border-2 border-gray-200 p-3 rounded outline-none focus:border-blue" value={message} onChange={(e) => setMessage(e.target.value)} 
+							className="form-textarea w-full border-2 border-gray-200 p-3 rounded outline-none focus:border-blue"
+							value={message}
+							onChange={e => setMessage(e.target.value)}
 							rows="3"
 						></textarea>
 					</div>
