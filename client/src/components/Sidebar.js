@@ -50,7 +50,7 @@ const Sidebar = () => {
 			</div>
 			{/* Mobile Parts */}
 			<div className="fixed left-0 bottom-0 lg:hidden">
-				<nav className="flex w-screen justify-around bg-white">
+				<nav className="flex w-screen justify-around bg-gray-900 text-white">
 					{LINKS.map((link, i) => {
 						return <NavLink key={i} index={i} label={link.name} to={link.path} exact={link.exact} />;
 					})}
