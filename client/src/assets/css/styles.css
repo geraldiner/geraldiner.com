@@ -25,11 +25,11 @@ body {
 }
 
 .accent {
-	color: #235cfa;
+	color: #0081b2;
 }
 
 .active {
-	background-color: #fbbf24;
+	background-color: #e5b417;
 	font-weight: bold;
 	color: white;
 }

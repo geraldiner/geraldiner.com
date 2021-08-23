@@ -12,16 +12,15 @@ module.exports = {
 			gray: colors.coolGray,
 			indigo: colors.indigo,
 			red: colors.rose,
-			yellow: colors.amber,
+			yellow: {
+				DEFAULT: "#E5B417",
+			},
 			purple: colors.violet,
 			pink: colors.pink,
-			green: {
-				light: "#60B99A",
-				DEFAULT: "#20A89D",
-				dark: "#029299",
-			},
+			green: colors.green,
 			blue: {
 				DEFAULT: "#0081B2",
+				dark: "006A9A",
 			},
 		},
 		extends: {
