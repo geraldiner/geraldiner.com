@@ -20,12 +20,15 @@ module.exports = {
 			green: colors.green,
 			blue: {
 				DEFAULT: "#0081B2",
-				dark: "006A9A",
+				dark: "#006A9A",
 			},
 		},
-		extends: {
+		extend: {
 			listStyleType: {
 				"leading-zero": "leading-zero",
+			},
+			dropShadow: {
+				"base": "2px 4px 2px black",
 			},
 		},
 	},

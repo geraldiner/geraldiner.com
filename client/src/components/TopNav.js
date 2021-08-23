@@ -5,7 +5,7 @@ import NavLink from "./NavLink";
 const TopNav = () => {
 	return (
 		<>
-			<div className="hidden w-8/12 lg:fixed lg:block bg-gray-900 text-white">
+			<div className="hidden z-10 w-8/12 lg:fixed lg:block bg-gray-900 text-white">
 				<nav className="flex justify-center">
 					{LINKS.map((link, i) => {
 						return <NavLink key={i} index={i} label={link.name} to={link.path} exact={link.exact} />;

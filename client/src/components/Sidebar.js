@@ -22,7 +22,7 @@ const Sidebar = () => {
 				</div>
 			</div>
 			{/* Default Styles */}
-			<div className="text-center lg:ml-32 lg:mt-16 lg:fixed lg:w-1/5 lg:text-left">
+			<div className="text-center min-w-min lg:ml-32 lg:mt-16 lg:fixed lg:w-1/5 lg:text-left">
 				<section id="top-desc" className="p-3 bg-white rounded-md m-4 ">
 					<Loading loading={loading} source="GitHub" />
 					{error && `Error! ${error.message}`}
@@ -39,7 +39,7 @@ const Sidebar = () => {
 						);
 					})}
 				</section>
-				<section className="hidden lg:block bg-white rounded-md m-4  my-3">
+				<section className="hidden lg:block bg-white rounded-md m-4 my-3">
 					{me && (
 						<div className="py-2 px-3 flex">
 							<span className="mr-2" dangerouslySetInnerHTML={{ __html: me.status.emojiHTML }}></span>
