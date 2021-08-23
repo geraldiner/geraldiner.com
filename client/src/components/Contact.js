@@ -1,6 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
+
+const encode = data => {
+	return Object.keys(data)
+		.map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+		.join("&");
+};
 
 const Contact = () => {
+	const [name, setName] = useState("");
+	const [email, setEmail] = useState("");
+	const [message, setMessage] = useState("");
+
+	const handleSubmit = async e => {
+		e.preventDefault();
+		try {
+			await fetch("/", {
+				method: "POST",
+				headers: { "Content-Type": "application/x-www-form-urlencoded" },
+				body: encode({ "form-name": "contact", ...this.state }),
+			});
+		} catch (error) {
+			console.log(error);
+		}
+	};
+
 	return (
 		<>
 			<div className="bg-white rounded-md p-3 mx-4 lg:mx-16">
@@ -9,13 +32,11 @@ const Contact = () => {
 				<form
 					name="contact"
 					className="space-y-5"
-					action="/thanks"
-					method="POST"
+					onSubmit={handleSubmit}
 					data-netlify-honeypot="bot-field"
 					data-netlify-recaptcha="true"
 					data-netlify="true"
 				>
-					<div></div>
 					<div className="hidden">
 						<label className="block mb-1 font-bold text-gray-500" htmlFor="bot-field">
 							Don’t fill this out if you’re human: <input name="bot-field" />
@@ -25,14 +46,14 @@ const Contact = () => {
 						<label htmlFor="name" className="block mb-1 font-bold text-gray-500">
 							Name
 						</label>
-						<input name="name" type="text" className="form-input w-full border-2 border-gray-200 p-3 rounded outline-none focus:border-blue" />
+						<input name="name" type="text" className="form-input w-full border-2 border-gray-200 p-3 rounded outline-none focus:border-blue" value={name} onChange={(e) => setName(e.target.value)} />
 					</div>
 
 					<div>
 						<label htmlFor="email" className="block mb-1 font-bold text-gray-500">
 							Email
 						</label>
-						<input type="email" name="email" className="form-input w-full border-2 border-gray-200 p-3 rounded outline-none focus:border-blue" />
+						<input type="email" name="email" className="form-input w-full border-2 border-gray-200 p-3 rounded outline-none focus:border-blue" value={email} onChange={(e) => setEmail(e.target.value)} />
 					</div>
 
 					<div>
@@ -41,7 +62,7 @@ const Contact = () => {
 						</label>
 						<textarea
 							name="message"
-							className="form-textarea w-full border-2 border-gray-200 p-3 rounded outline-none focus:border-blue"
+							className="form-textarea w-full border-2 border-gray-200 p-3 rounded outline-none focus:border-blue" value={message} onChange={(e) => setMessage(e.target.value)} 
 							rows="3"
 						></textarea>
 					</div>
