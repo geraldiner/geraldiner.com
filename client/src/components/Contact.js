@@ -9,7 +9,6 @@ const Contact = () => {
 				<form
 					name="contact"
 					method="POST"
-					action="/thanks"
 					className="space-y-5"
 					onSubmit="submit"
 					data-netlify-honeypot="bot-field"
@@ -49,7 +48,10 @@ const Contact = () => {
 						></textarea>
 					</div>
 					<div data-netlify-recaptcha="true"></div>
-					<button className="block w-full bg-blue hover:bg-yellow p-4 rounded text-white font-bold hover:text-gray-900 transition duration-300">
+					<button
+						type="submit"
+						className="block w-full bg-blue hover:bg-yellow p-4 rounded text-white font-bold hover:text-gray-900 transition duration-300"
+					>
 						Send
 					</button>
 				</form>
