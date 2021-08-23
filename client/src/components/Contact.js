@@ -1,11 +1,5 @@
 import React, { useState } from "react";
 
-const encode = data => {
-	return Object.keys(data)
-		.map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-		.join("&");
-};
-
 const Contact = () => {
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
@@ -13,20 +7,18 @@ const Contact = () => {
 
 	const handleSubmit = async e => {
 		e.preventDefault();
-		try {
-			await fetch("/", {
-				method: "POST",
-				headers: { "Content-Type": "application/x-www-form-urlencoded" },
-				body: encode({
-					"form-name": "contact",
-					"name": name,
-					"email": email,
-					"message": message,
-				}),
-			});
-		} catch (error) {
-			console.log(error);
-		}
+		let formData = new FormData();
+		formData.append("form-name", "contact");
+		formData.append("name", name);
+		formData.append("email", email);
+		formData.append("message", message);
+
+		fetch("/", {
+			method: "POST",
+			body: formData,
+		})
+			.then(() => alert("Success!"))
+			.catch(error => alert(error));
 	};
 
 	return (
@@ -36,6 +28,7 @@ const Contact = () => {
 
 				<form
 					name="contact"
+					action="/thanks"
 					className="space-y-5"
 					onSubmit={handleSubmit}
 					data-netlify-honeypot="bot-field"
