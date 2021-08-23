@@ -12,13 +12,17 @@ const Contact = () => {
 		formData.append("name", name);
 		formData.append("email", email);
 		formData.append("message", message);
-
-		fetch("/", {
-			method: "POST",
-			body: formData,
-		})
-			.then(() => alert("Success!"))
-			.catch(error => alert(error));
+		console.log(formData);
+		try {
+			const response = await fetch("/", {
+				method: "POST",
+				headers: { "Content-Type": "application/x-www-form-urlencoded" },
+				body: formData,
+			});
+			console.log(response);
+		} catch (error) {
+			console.log(error);
+		}
 	};
 
 	return (
