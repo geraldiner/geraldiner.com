@@ -8,9 +8,9 @@ const Contact = () => {
 
 				<form
 					name="contact"
-					method="POST"
+					method="post"
+					action="/thanks/"
 					className="space-y-5"
-					onSubmit="submit"
 					data-netlify-honeypot="bot-field"
 					data-netlify-recaptcha="true"
 					data-netlify="true"
