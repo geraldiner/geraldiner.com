@@ -15,9 +15,7 @@ const Contact = () => {
 					data-netlify-recaptcha="true"
 					data-netlify="true"
 				>
-					<div>
-						<input type="hidden" name="form-name" value="contact" />
-					</div>
+					<div></div>
 					<div className="hidden">
 						<label className="block mb-1 font-bold text-gray-500" htmlFor="bot-field">
 							Don’t fill this out if you’re human: <input name="bot-field" />
