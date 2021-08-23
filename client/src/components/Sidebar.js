@@ -51,10 +51,16 @@ const Sidebar = () => {
 			{/* Mobile Parts */}
 			<div className="fixed left-0 bottom-0 z-10 lg:hidden">
 				<nav className="flex w-screen justify-around bg-gray-900 text-white">
-        {LINKS.map((link, i) => {
+					{LINKS.map((link, i) => {
 						return <NavLink key={i} index={i} label={link.name} to={link.path} exact={link.exact} />;
 					})}
-          <a className="w-1/4 text-center text-sm p-3 bg-blue hover:bg-yellow-400  hover:text-white" href="../assets/GeraldineRagsac_Resume_2021.pdf" download >Resume</a>
+					<a
+						className="w-1/4 text-center font-bold text-sm p-3 bg-blue hover:bg-gray-900  hover:text-white"
+						href="../assets/GeraldineRagsac_Resume_2021.pdf"
+						download
+					>
+						Resume
+					</a>
 				</nav>
 			</div>
 		</>

@@ -1,6 +1,6 @@
 body {
-	background-color: #60b99a;
-	/* background: linear-gradient(#60b99a, #faca66); */
+	background-color: #006a9a;
+	/* background: linear-gradient(#006A9A, #e5b417); */
 	background: url("https://images.unsplash.com/photo-1490750967868-88aa4486c946");
 	background-attachment: fixed;
 	background-size: cover;
@@ -25,13 +25,17 @@ body {
 }
 
 .accent {
-	color: #006A9A;
+	color: #006a9a;
 }
 
 .active {
 	background-color: #e5b417;
 	font-weight: bold;
 	color: white;
+}
+
+a:hover {
+	font-weight: bold;
 }
 
 @counter-style leading-zero {

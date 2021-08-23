@@ -3,14 +3,14 @@ import React from "react";
 const ProjectCard = ({ name, commitCount, description, homepageUrl, languages, imageUrl, topics, updatedAt, repoUrl }) => {
 	return (
 		<>
-			<div className="text-center my-8 lg:mx-16 lg:text-left">
+			<div className="text-center mb-8 lg:mx-16 lg:text-left">
 				<div className="w-full p-3 rounded-t-md bg-white">
-					<h1 className="text-2xl lg:text-3xl my-3">
+					<h3 className="text-2xl lg:text-3xl my-3">
 						{name
 							.split("-")
 							.map(w => w[0].toUpperCase().concat(w.slice(1)))
 							.join(" ")}
-					</h1>
+					</h3>
 					<p className="my-2">{description}</p>
 					<img className="my-4" src={imageUrl} alt={description} />
 					<p className="my-4">

@@ -4,7 +4,8 @@ import Sidebar from "./components/Sidebar";
 import TopNav from "./components/TopNav";
 import FeaturedRepos from "./components/FeaturedRepos";
 import About from "./components/About";
-// import Contact from "./components/Contact";
+import Contact from "./components/Contact";
+import Thanks from "./components/Thanks";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
@@ -20,10 +21,12 @@ function App() {
 				</div>
 				<div className="w-full lg:w-2/3 flex flex-col">
 					<TopNav />
-					<div className="mt-12 mb-24">
+					<div className="mt-4 mb-24 lg:mt-8">
 						<Switch>
 							<Route path="/" exact component={FeaturedRepos} />
 							<Route path="/about" component={About} />
+							<Route path="/contact" component={Contact} />
+							<Route path="/thanks" component={Thanks} />
 						</Switch>
 					</div>
 				</div>

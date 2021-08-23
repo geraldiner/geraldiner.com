@@ -9,7 +9,7 @@ const NavLink = ({ index, label, to, exact }) => {
 	return (
 		<>
 			{match && ""}
-			<Link to={to} className={`w-1/4 text-center text-sm p-3 hover:bg-yellow-400  hover:text-white ${match ? "active" : ""}`}>
+			<Link to={to} className={`w-1/4 text-center text-sm p-3 hover:bg-yellow hover:text-white ${match ? "active" : ""}`}>
 				{label}
 			</Link>
 		</>
