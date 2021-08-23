@@ -6,8 +6,8 @@ const Loading = ({ loading, source }) => {
 		<>
 			{loading ? (
 				<section>
-					<BarLoader />
-					<span>'Loading data from {source}</span>
+					<BarLoader color={"#006a9a"} />
+					<span>Loading data from {source}</span>
 				</section>
 			) : null}
 		</>

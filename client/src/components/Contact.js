@@ -13,6 +13,7 @@ const Contact = () => {
 					netlify-honeypot="bot-field"
 					data-netlify-recaptcha="true"
 					data-netlify="true"
+					netlify
 				>
 					<div className="hidden">
 						<label className="block mb-1 font-bold text-gray-500" htmlFor="bot-field">
