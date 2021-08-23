@@ -5,8 +5,27 @@ const Contact = () => {
 		<>
 			<div className="bg-white rounded-md p-3 mx-4 lg:mx-16">
 				<h3 className="text-2xl lg:text-3xl my-3">Let's chat!</h3>
-
-				<form
+				<form name="contact" method="post" data-netlify="true" onSubmit="submit">
+					<input type="hidden" name="form-name" value="contact" />
+					<div>
+						<label htmlFor="first-name">First Name</label>
+						<input id="first-name" type="text" name="first-name" />
+					</div>
+					<div>
+						<label htmlFor="last-name">Last Name</label>
+						<input id="last-name" type="text" name="last-name" />
+					</div>
+					<div>
+						<label>Email</label>
+						<input id="email" type="email" name="email" />
+					</div>
+					<div>
+						<label htmlFor="message">Message</label>
+						<textarea id="message" name="message"></textarea>
+					</div>
+					<button type="submit">Send Message</button>
+				</form>
+				{/* <form
 					name="contact"
 					method="post"
 					action="/thanks/"
@@ -52,7 +71,7 @@ const Contact = () => {
 					>
 						Send
 					</button>
-				</form>
+				</form> */}
 			</div>
 		</>
 	);
