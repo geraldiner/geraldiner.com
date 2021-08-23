@@ -1,14 +1,14 @@
 import React from "react";
 
 const Contact = () => {
-  const handleSubmit = (e) => {
-    e.preventDefault()
-  }
+	const handleSubmit = e => {
+		e.preventDefault();
+	};
 	return (
 		<>
 			<div className="bg-white rounded-md p-3 mx-4 lg:mx-16">
 				<h3 className="text-2xl lg:text-3xl my-3">Let's chat!</h3>
-				<form name="contact" method="post" data-netlify="true" onSubmit={handleSubmit}">
+				<form name="contact" method="post" data-netlify="true" onSubmit={handleSubmit}>
 					<input type="hidden" name="form-name" value="contact" />
 					<div>
 						<label htmlFor="first-name">First Name</label>
