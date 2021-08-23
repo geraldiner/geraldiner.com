@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Sidebar from "./components/Sidebar";
 import TopNav from "./components/TopNav";
-import Main from "./components/Main";
+import FeaturedRepos from "./components/FeaturedRepos";
 import About from "./components/About";
 // import Contact from "./components/Contact";
 
@@ -22,7 +22,7 @@ function App() {
 					<TopNav />
 					<div className="mt-12 mb-24">
 						<Switch>
-							<Route path="/" exact component={Main} />
+							<Route path="/" exact component={FeaturedRepos} />
 							<Route path="/about" component={About} />
 						</Switch>
 					</div>

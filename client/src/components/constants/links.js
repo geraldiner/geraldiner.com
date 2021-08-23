@@ -10,11 +10,6 @@ export const LINKS = [
 		"exact": false,
 	},
 	{
-		"name": "Resume",
-		"path": "../assets/GeraldineRagsac_Resume_2021.pdf",
-		"exact": false,
-	},
-	{
 		"name": "Contact",
 		"path": "/contact",
 		"exact": false,

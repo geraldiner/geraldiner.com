@@ -22,7 +22,7 @@ const FeaturedReposQuery = `
 	query {
 		viewer {
 			id
-			pinnedItems(first: 3) {
+			pinnedItems(first: 6) {
 				nodes {
 					... on Repository {
 						name
