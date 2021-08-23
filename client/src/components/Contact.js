@@ -5,7 +5,23 @@ const Contact = () => {
 		<>
 			<div className="bg-white rounded-md p-3 mx-4 lg:mx-16">
 				<h3 className="text-2xl lg:text-3xl my-3">Let's chat!</h3>
-				<form
+				<form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+					<p>
+						<label>
+							Email: <input type="text" name="name" />
+						</label>
+					</p>
+					<p>
+						<label>
+							Message: <textarea name="message"></textarea>
+						</label>
+					</p>
+					<div data-netlify-recaptcha="true"></div>
+					<p>
+						<button type="submit">Send</button>
+					</p>
+				</form>
+				{/* <form
 					name="contact"
 					className="space-y-5"
 					action="/thanks"
@@ -47,7 +63,7 @@ const Contact = () => {
 					<button className="block w-full bg-blue hover:bg-yellow p-4 rounded text-white font-bold hover:text-gray-900 transition duration-300">
 						Send
 					</button>
-				</form>
+				</form> */}
 			</div>
 		</>
 	);
