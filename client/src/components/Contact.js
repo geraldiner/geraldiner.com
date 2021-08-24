@@ -5,8 +5,13 @@ const Contact = () => {
 		<>
 			<div className="bg-white rounded-md p-3 mx-4 lg:mx-16">
 				<h3 className="text-2xl lg:text-3xl my-3">Let's chat!</h3>
-				<form name="contact" method="post" className="space-y-5" data-netlify="true" action="/thanks/">
+				<form name="contact" method="post" className="space-y-5" netlify-honeypot="bot-field" data-netlify="true" action="/thanks/">
 					<input type="hidden" name="form-name" value="contact" />
+					<p class="hidden">
+						<label>
+							Don’t fill this out if you’re human: <input name="bot-field" />
+						</label>
+					</p>
 					<div>
 						<label htmlFor="name" className="block mb-1 font-bold text-gray-500">
 							Name
