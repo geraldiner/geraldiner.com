@@ -69,7 +69,7 @@ const RecentReposQuery = `
 	query {
 		viewer {
 			id
-			repositories(orderBy: { field: UPDATED_AT, direction: ASC }, last: 3, privacy: PUBLIC, isFork: false) {
+			repositories(orderBy: { field: UPDATED_AT, direction: ASC }, last: 6, privacy: PUBLIC, isFork: false) {
 				nodes {
 					... on Repository {
 						name
