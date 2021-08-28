@@ -16,7 +16,7 @@ function App() {
 	return (
 		<Router>
 			<div className="flex flex-wrap">
-				<div className="w-full lg:w-1/3">
+				<div className="sidebar w-full lg:w-1/3">
 					<Sidebar />
 				</div>
 				<div className="w-full lg:w-2/3 flex flex-col">
