@@ -15,7 +15,7 @@ library.add(fab);
 function App() {
 	return (
 		<Router>
-			<div className="flex flex-wrap">
+			<div className="flex flex-wrap min-h-screen">
 				<div className="sidebar w-full lg:w-1/3">
 					<Sidebar />
 				</div>
