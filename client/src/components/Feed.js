@@ -34,7 +34,7 @@ const Feed = () => {
 						href={`https://${userPosts.domain}`}
 						target="_blank"
 						rel="noopener noreferrer"
-						className="rounded-md inline-block w-2/5 p-3 bg-blue text-white font-bold hover:bg-gray-600"
+						className="rounded-md inline-block w-full lg:w-2/5 p-3 bg-blue text-white font-bold hover:bg-gray-600"
 					>
 						See More Posts
 					</a>
