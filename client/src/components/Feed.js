@@ -27,6 +27,16 @@ const Feed = () => {
 						/>
 					);
 				})}
+			<div className="w-full text-center">
+				<a
+					href={`https://${userPosts.domain}`}
+					target="_blank"
+					rel="noopener noreferrer"
+					className="rounded-md inline-block w-2/5 p-3 bg-blue text-white font-bold hover:bg-gray-600"
+				>
+					See More Posts
+				</a>
+			</div>
 		</div>
 	);
 };

@@ -37,13 +37,7 @@ const Sidebar = () => {
 								rel="noopener noreferrer"
 								className={`text-center text-2xl p-3 rounded-sm w-1/${SOCIALS.length}`}
 							>
-								{social.exist ? (
-									<FontAwesomeIcon icon={["fab", social.name]} className={`${social.name}  hover:text-yellow-400`} />
-								) : (
-									<div className="mx-auto">
-										<img src={social.imgFile} alt={`${social.name} logo`} width="24" />
-									</div>
-								)}
+								<FontAwesomeIcon icon={["fab", social.name]} className={`${social.name}  hover:text-yellow-400`} />
 							</a>
 						);
 					})}
