@@ -4,7 +4,6 @@ import { AboutQuery } from "../queries/github-queries";
 import Loading from "./Loading";
 import NavLink from "./NavLink";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "react-router-dom";
 import { LINKS, SOCIALS } from "./constants/links";
 
 const Sidebar = () => {
@@ -16,9 +15,7 @@ const Sidebar = () => {
 			{/* Mobile Parts */}
 			<div className="lg:hidden">
 				<div className="text-white bg-transparent align-center p-4">
-					<h1 className="text-lg">
-						<Link to="/">Geraldine.</Link>
-					</h1>
+					<h1 className="text-lg">Geraldine.</h1>
 				</div>
 			</div>
 			{/* Default Styles */}
@@ -26,9 +23,7 @@ const Sidebar = () => {
 				<section id="top-desc" className="p-3 bg-white rounded-md m-4 ">
 					<Loading loading={loading} source="GitHub" />
 					{error && `Error! ${error.message}`}
-					<h1 className="hidden lg:text-5xl lg:block my-3">
-						<Link to="/">{data && me.name}.</Link>
-					</h1>
+					<h1 className="hidden lg:text-5xl lg:block my-3">{data && me.name}.</h1>
 					<h2 className="text-lg lg:text-2xl my-2 lg:my-5">Full-Stack Software Engineer</h2>
 					<p className="text-sm lg:text-base">{data && me.bio}</p>
 				</section>

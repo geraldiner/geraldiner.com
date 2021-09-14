@@ -5,6 +5,11 @@ export const LINKS = [
 		"exact": true,
 	},
 	{
+		"name": "Feed",
+		"path": "/blog",
+		"exact": false,
+	},
+	{
 		"name": "About",
 		"path": "/about",
 		"exact": false,
@@ -27,6 +32,10 @@ export const SOCIALS = [
 	},
 	{
 		"name": "twitter",
-		"link": "https://twitter.com/geraldinedesue",
+		"link": "https://twitter.com/geraldinedesu",
+	},
+	{
+		"name": "hashnode",
+		"link": "https://hashnode.com/@geraldiner",
 	},
 ];

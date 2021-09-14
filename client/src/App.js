@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 import TopNav from "./components/TopNav";
 import Main from "./components/Main";
+import Feed from "./components/Feed";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Thanks from "./components/Thanks";
@@ -24,6 +25,7 @@ function App() {
 					<div className="mt-4 mb-24 lg:mt-8">
 						<Switch>
 							<Route path="/" exact component={Main} />
+							<Route path="/blog" component={Feed} />
 							<Route path="/about" component={About} />
 							<Route path="/contact" component={Contact} />
 							<Route path="/thanks" component={Thanks} />

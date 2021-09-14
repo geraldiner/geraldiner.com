@@ -1,6 +1,7 @@
 const { ApolloServer } = require("apollo-server");
 const resolvers = require("./resolvers");
 const GithubAPI = require("./datasources/github");
+const HashnodeAPI = require("./datasources/hashnode");
 const typeDefs = require("./schema");
 require("dotenv").config({ path: __dirname + "/.env" });
 
@@ -10,11 +11,13 @@ const server = new ApolloServer({
 	dataSources: () => {
 		return {
 			githubAPI: new GithubAPI(),
+			hashnodeAPI: new HashnodeAPI(),
 		};
 	},
 	context: () => {
 		return {
-			token: process.env.GITHUB_TOKEN,
+			githubToken: process.env.GITHUB_TOKEN,
+			hashnodeToken: process.env.HASHNODE_TOKEN,
 			env: process.env.NODE_ENV,
 		};
 	},

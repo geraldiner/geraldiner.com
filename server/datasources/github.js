@@ -3,7 +3,7 @@ const { AboutQuery, FeaturedReposQuery, RecentReposQuery } = require("../queries
 
 class GithubAPI extends RESTDataSource {
 	willSendRequest(request) {
-		request.headers.set("Authorization", `token ${this.context.token}`);
+		request.headers.set("Authorization", `token ${this.context.githubToken}`);
 		request.headers.set("Content-Type", "application/graphql");
 	}
 
