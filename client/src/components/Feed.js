@@ -7,7 +7,6 @@ import BlogCard from "./BlogCard";
 const Feed = () => {
 	const { loading, error, data } = useQuery(PostsQuery);
 	const userPosts = data?.getPosts;
-	console.log(userPosts);
 	return (
 		<div className="p-3 mx-2 lg:mt-8 lg:mx-16">
 			<Loading className="w-full p-3 rounded-t-md bg-white" loading={loading} source="Hashnode" />

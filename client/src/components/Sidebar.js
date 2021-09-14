@@ -27,11 +27,23 @@ const Sidebar = () => {
 					<h2 className="text-lg lg:text-2xl my-2 lg:my-5">Full-Stack Software Engineer</h2>
 					<p className="text-sm lg:text-base">{data && me.bio}</p>
 				</section>
-				<section id="social-links" className="hidden bg-white rounded-md m-4 lg:flex lg:justify-around ">
+				<section id="social-links" className="hidden bg-white rounded-md m-4 lg:flex lg:justify-center lg:items-center">
 					{SOCIALS.map((social, i) => {
 						return (
-							<a key={i} href={social.link} target="_blank" rel="noopener noreferrer" className="text-2xl p-3 rounded-sm">
-								<FontAwesomeIcon icon={["fab", social.name]} className={`${social.name}  hover:text-yellow-400`} />
+							<a
+								key={i}
+								href={social.link}
+								target="_blank"
+								rel="noopener noreferrer"
+								className={`text-center text-2xl p-3 rounded-sm w-1/${SOCIALS.length}`}
+							>
+								{social.exist ? (
+									<FontAwesomeIcon icon={["fab", social.name]} className={`${social.name}  hover:text-yellow-400`} />
+								) : (
+									<div className="mx-auto">
+										<img src={social.imgFile} alt={`${social.name} logo`} width="24" />
+									</div>
+								)}
 							</a>
 						);
 					})}
