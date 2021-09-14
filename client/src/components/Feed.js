@@ -7,6 +7,7 @@ import BlogCard from "./BlogCard";
 const Feed = () => {
 	const { loading, error, data } = useQuery(PostsQuery);
 	const userPosts = data?.getPosts;
+
 	return (
 		<div className="p-3 mx-2 lg:mt-8 lg:mx-16">
 			<Loading className="w-full p-3 rounded-t-md bg-white" loading={loading} source="Hashnode" />
@@ -27,16 +28,18 @@ const Feed = () => {
 						/>
 					);
 				})}
-			<div className="w-full text-center">
-				<a
-					href={`https://${userPosts.domain}`}
-					target="_blank"
-					rel="noopener noreferrer"
-					className="rounded-md inline-block w-2/5 p-3 bg-blue text-white font-bold hover:bg-gray-600"
-				>
-					See More Posts
-				</a>
-			</div>
+			{data && (
+				<div className="w-full text-center">
+					<a
+						href={`https://${userPosts.domain}`}
+						target="_blank"
+						rel="noopener noreferrer"
+						className="rounded-md inline-block w-2/5 p-3 bg-blue text-white font-bold hover:bg-gray-600"
+					>
+						See More Posts
+					</a>
+				</div>
+			)}
 		</div>
 	);
 };
