@@ -8,7 +8,8 @@ import "./assets/css/styles.css";
 const url = process.env.NODE_ENV !== "production" ? "http://localhost:4000" : "https://geraldiner-com.herokuapp.com";
 
 const client = new ApolloClient({
-	uri: url,
+	// uri: url,
+	url: "/.netlify/functions/github-graphql",
 	cache: new InMemoryCache(),
 });
 
