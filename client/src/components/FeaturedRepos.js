@@ -5,7 +5,9 @@ import Loading from "./Loading";
 import ProjectCard from "./ProjectCard";
 
 const FeaturedRepos = () => {
-	const { loading, error, data } = useQuery(FeaturedReposQuery);
+	const { loading, error, data } = useQuery(FeaturedReposQuery, {
+		pollInterval: 500,
+	});
 	const featuredRepos = data?.getFeaturedRepos;
 
 	return (

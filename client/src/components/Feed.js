@@ -5,7 +5,9 @@ import Loading from "./Loading";
 import BlogCard from "./BlogCard";
 
 const Feed = () => {
-	const { loading, error, data } = useQuery(PostsQuery);
+	const { loading, error, data } = useQuery(PostsQuery, {
+		pollInterval: 500,
+	});
 	const userPosts = data?.getPosts;
 
 	return (
