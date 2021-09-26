@@ -2,22 +2,27 @@ body {
 	background-color: #eee;
 }
 
-.sidebar {
-	background: url("https://images.unsplash.com/photo-1490750967868-88aa4486c946");
-	background-attachment: fixed;
-	background-size: cover;
-}
-
-.linkedin {
+.social-linkedin {
 	color: #0077b5;
 }
 
-.github {
+.social-github {
 	color: #333;
 }
 
-.twitter {
+.social-twitter {
 	color: #1da1f2;
+}
+
+.social-default {
+	color: #006a9a;
+}
+
+.social-default:hover,
+.social-github:hover,
+.social-linkedin:hover,
+.social-twitter:hover {
+	color: #e5b417;
 }
 
 .accent {

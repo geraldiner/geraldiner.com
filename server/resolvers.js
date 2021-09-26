@@ -12,10 +12,6 @@ const resolvers = {
 			const data = await dataSources.githubAPI.getRecentRepos();
 			return data;
 		},
-		getPosts: async (_, __, { dataSources }) => {
-			const data = await dataSources.hashnodeAPI.getPosts();
-			return data;
-		},
 	},
 };
 

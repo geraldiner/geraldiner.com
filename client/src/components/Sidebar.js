@@ -14,8 +14,8 @@ const Sidebar = () => {
 		<>
 			{/* Mobile Parts */}
 			<div className="lg:hidden">
-				<div className="text-white bg-transparent align-center p-4">
-					<h1 className="text-lg">Geraldine.</h1>
+				<div className="text-white bg-blue align-center p-4">
+					<h1 className="text-lg text-center">Geraldine.</h1>
 				</div>
 			</div>
 			{/* Default Styles */}
@@ -37,7 +37,10 @@ const Sidebar = () => {
 								rel="noopener noreferrer"
 								className={`text-center text-2xl p-3 rounded-sm w-1/${SOCIALS.length}`}
 							>
-								<FontAwesomeIcon icon={["fab", social.name]} className={`${social.name}  hover:text-yellow-400`} />
+								<FontAwesomeIcon
+									icon={social.icon ? ["fab", social.name] : social.replacement}
+									className={social.icon ? `social-${social.name}` : `social-${social.name} social-default`}
+								/>
 							</a>
 						);
 					})}

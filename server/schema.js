@@ -5,7 +5,6 @@ const typeDefs = gql`
 		getAbout: About
 		getFeaturedRepos: [Repository]
 		getRecentRepos: [Repository]
-		getPosts: Posts
 	}
 	type UserStatus {
 		emojiHTML: String
@@ -47,19 +46,6 @@ const typeDefs = gql`
 	}
 	type Topic {
 		name: String
-	}
-	type Posts {
-		domain: String
-		posts: [Post]
-	}
-	type Post {
-		title: String
-		brief: String
-		coverImage: String
-		dateAdded: String
-		totalReactions: Int
-		tags: [String]
-		slug: String
 	}
 `;
 

@@ -3,7 +3,6 @@ const ApolloServerLambda = require("apollo-server-lambda").ApolloServer;
 const resolvers = require("./resolvers");
 const typeDefs = require("./schema");
 const GithubAPI = require("./datasources/github");
-const HashnodeAPI = require("./datasources/hashnode");
 require("dotenv").config({ path: __dirname + "/.env" });
 
 function createLambdaServer() {
@@ -13,13 +12,11 @@ function createLambdaServer() {
 		dataSources: () => {
 			return {
 				githubAPI: new GithubAPI(),
-				hashnodeAPI: new HashnodeAPI(),
 			};
 		},
 		context: () => {
 			return {
 				githubToken: process.env.GITHUB_TOKEN,
-				hashnodeToken: process.env.HASHNODE_TOKEN,
 				env: process.env.NODE_ENV,
 			};
 		},
@@ -36,13 +33,11 @@ function createLocalServer() {
 		dataSources: () => {
 			return {
 				githubAPI: new GithubAPI(),
-				hashnodeAPI: new HashnodeAPI(),
 			};
 		},
 		context: () => {
 			return {
 				githubToken: process.env.GITHUB_TOKEN,
-				hashnodeToken: process.env.HASHNODE_TOKEN,
 				env: process.env.NODE_ENV,
 			};
 		},

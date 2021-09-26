@@ -5,11 +5,6 @@ export const LINKS = [
 		"exact": true,
 	},
 	{
-		"name": "Feed",
-		"path": "/blog",
-		"exact": false,
-	},
-	{
 		"name": "About",
 		"path": "/about",
 		"exact": false,
@@ -25,13 +20,22 @@ export const SOCIALS = [
 	{
 		"name": "linkedin",
 		"link": "https://linkedin.com/in/geraldiner",
+		"icon": true,
 	},
 	{
 		"name": "github",
 		"link": "https://github.com/geraldiner",
+		"icon": true,
 	},
 	{
 		"name": "twitter",
 		"link": "https://twitter.com/geraldinedesu",
+		"icon": true,
+	},
+	{
+		"name": "hashnode",
+		"link": "blog.geraldiner.com",
+		"icon": false,
+		"replacement": "rss",
 	},
 ];
