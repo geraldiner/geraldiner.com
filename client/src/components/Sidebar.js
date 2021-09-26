@@ -14,7 +14,7 @@ const Sidebar = () => {
 		<>
 			{/* Mobile Parts */}
 			<div className="lg:hidden">
-				<div className="text-white bg-blue align-center p-4">
+				<div className="text-white bg-gray-900 align-center p-4">
 					<h1 className="text-lg text-center">Geraldine.</h1>
 				</div>
 			</div>
