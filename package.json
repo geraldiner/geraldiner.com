@@ -1,12 +1,13 @@
 {
   "name": "geraldiner.com",
   "version": "1.0.0",
-  "description": "Personal website for Geraldine Ragsac (@geraldiner / @geraldinedesu)",
+  "description": "Personal website for Geraldine Ragsac (@geraldiner)",
   "main": "index.js",
   "scripts": {
     "start": "concurrently \"npm run start:client\" \"npm run start:server\"",
     "start:client": "cd client && npm run start",
     "start:server": "cd server && npm run dev",
+    "bundle": "cpx server/**/* functions/bundle",
     "build": "concurrently \"npm run build:web\" \"npm run build:functions\"",
     "build:functions": "cd functions && npm run build",
     "build:web": "cd client && npm run build"
@@ -19,10 +20,11 @@
   "author": "Geraldine R",
   "license": "ISC",
   "dependencies": {
-    "apollo-datasource-graphql": "^1.3.2",
     "apollo-datasource-rest": "^3.1.1",
     "apollo-server": "^3.1.2",
+    "apollo-server-lambda": "^2.0.7",
     "axios": "^0.21.1",
+    "cpx": "^1.5.0",
     "dotenv": "^10.0.0",
     "graphql": "^15.5.1"
   },
