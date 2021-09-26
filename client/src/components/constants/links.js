@@ -34,7 +34,7 @@ export const SOCIALS = [
 	},
 	{
 		"name": "hashnode",
-		"link": "blog.geraldiner.com",
+		"link": "https://blog.geraldiner.com",
 		"icon": false,
 		"replacement": "rss",
 	},
