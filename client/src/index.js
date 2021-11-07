@@ -5,7 +5,7 @@ import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
 import "./assets/css/tailwind.css";
 import "./assets/css/styles.css";
 
-const url = process.env.NODE_ENV !== "production" ? "http://localhost:4000" : "https://graphql-portfolio.netlify.app/.netlify/functions/graphql";
+const url = process.env.NODE_ENV !== "production" ? "http://localhost:4000" : "https://geraldiner.com/.netlify/functions/graphql";
 
 const client = new ApolloClient({
 	uri: url,
