@@ -13,7 +13,7 @@ const TopNav = () => {
 					<a
 						className="w-1/4 text-center font-bold text-sm p-3 bg-blue hover:bg-gray-900 hover:text-white"
 						href="../assets/files/GeraldineRagsac_Resume_2021.pdf"
-						download
+						target="_blank"
 					>
 						Resume
 					</a>
