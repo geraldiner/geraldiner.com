@@ -24,14 +24,14 @@ const ProjectCard = ({ name, commitCount, description, homepageUrl, languages, i
 					<ul className="actions">
 						{repoUrl && (
 							<li>
-								<a href={repoUrl} className="button">
+								<a href={repoUrl} target="_blank" className="button" rel="noreferrer">
 									{"</>"} Code
 								</a>
 							</li>
 						)}
 						{homepageUrl && (
 							<li>
-								<a href={homepageUrl} className="button primary">
+								<a href={homepageUrl} target="_blank" className="button primary" rel="noreferrer">
 									Live Site
 								</a>
 							</li>

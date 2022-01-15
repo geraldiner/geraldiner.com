@@ -18,7 +18,7 @@ const Sidebar = () => {
 								<a href="#contact">Contact</a>
 							</li>
 						</ul>
-					</nav>
+					</nav>{" "}
 					<Social />
 				</div>
 			</section>

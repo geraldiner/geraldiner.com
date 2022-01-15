@@ -2,9 +2,6 @@ import React from "react";
 import { useQuery } from "@apollo/client";
 import { AboutQuery } from "../queries/github-queries";
 import Loading from "./Loading";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { LINKS, SOCIALS } from "./constants/links";
-import Social from "./Social";
 
 const Intro = () => {
 	const { loading, error, data } = useQuery(AboutQuery);
@@ -27,7 +24,7 @@ const Intro = () => {
 						<ul className="actions">
 							<li>
 								<a href="#work" className="button scrolly">
-									Learn More
+									See Projects
 								</a>
 								<a className="button primary scrolly" href="../assets/files/GeraldineRagsac_Resume_2021.pdf" target="_blank">
 									Resume

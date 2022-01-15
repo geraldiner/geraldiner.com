@@ -1,5 +1,13 @@
+* {
+	scroll-behavior: smooth;
+}
+
 #work > .project {
 	border-bottom: 1rem solid #5e42a6;
+}
+
+#sidebar ul.icons {
+	margin-left: 20px;
 }
 
 /* 
