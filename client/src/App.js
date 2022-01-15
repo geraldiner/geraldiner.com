@@ -2,6 +2,7 @@ import React from "react";
 import Sidebar from "./components/Sidebar";
 import Intro from "./components/Intro";
 import FeaturedRepos from "./components/FeaturedRepos";
+import Contact from "./components/Contact";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
@@ -18,6 +19,7 @@ function App() {
 			<div id="wrapper">
 				<Intro />
 				<FeaturedRepos />
+				<Contact />
 			</div>
 		</>
 	);

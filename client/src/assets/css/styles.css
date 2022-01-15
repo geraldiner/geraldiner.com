@@ -1,7 +1,8 @@
-body {
-	background-color: #eee;
+#work > .project {
+	border-bottom: 1rem solid #5e42a6;
 }
 
+/* 
 .social-linkedin {
 	color: #0077b5;
 }
@@ -44,4 +45,4 @@ a:hover {
 	symbols: "1" "2" "3" "4" "5" "6" "7" "8" "9";
 	prefix: "0";
 	suffix: " ";
-}
+} */

@@ -9,7 +9,7 @@ const FeaturedRepos = () => {
 	const featuredRepos = data?.getFeaturedRepos;
 
 	return (
-		<section id="work" class="wrapper style2 spotlights">
+		<section id="work" className="wrapper style2 spotlights">
 			<Loading className="w-full p-3 rounded-t-md bg-white" loading={loading} source="GitHub" />
 			{error && `Error! ${error.message}`}
 			{data &&

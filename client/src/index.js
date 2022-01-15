@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
+import "./assets/css/styles.css";
 
 const url = process.env.NODE_ENV !== "production" ? "http://localhost:4000" : "https://geraldiner.com/.netlify/functions/graphql";
 

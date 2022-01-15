@@ -4,6 +4,7 @@ import { AboutQuery } from "../queries/github-queries";
 import Loading from "./Loading";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { LINKS, SOCIALS } from "./constants/links";
+import Social from "./Social";
 
 const Intro = () => {
 	const { loading, error, data } = useQuery(AboutQuery);
@@ -25,8 +26,8 @@ const Intro = () => {
 						</p>
 						<ul className="actions">
 							<li>
-								<a href="#projects" className="button scrolly">
-									Learn more
+								<a href="#work" className="button scrolly">
+									Learn More
 								</a>
 								<a className="button primary scrolly" href="../assets/files/GeraldineRagsac_Resume_2021.pdf" target="_blank">
 									Resume

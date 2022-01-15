@@ -6,7 +6,7 @@ const ProjectCard = ({ name, commitCount, description, homepageUrl, languages, i
 		.map(w => w[0].toUpperCase().concat(w.slice(1)))
 		.join(" ");
 	return (
-		<section>
+		<section className="project">
 			<a href={imageUrl} className="image" style={{ backgroundImage: `url(${imageUrl})` }}>
 				<img src={imageUrl} alt={`Cover for ${projectName}`} data-position="center center" style={{ display: "none" }} />
 			</a>
@@ -14,12 +14,28 @@ const ProjectCard = ({ name, commitCount, description, homepageUrl, languages, i
 				<div className="inner">
 					<h2>{projectName}</h2>
 					<p>{description}</p>
+					{topics.length > 0 && (
+						<p>
+							{topics.map((topic, i) => {
+								return <span key={i}>#{topic.topic.name} </span>;
+							})}
+						</p>
+					)}
 					<ul className="actions">
-						<li>
-							<a href="generic.html" className="button">
-								Learn more
-							</a>
-						</li>
+						{repoUrl && (
+							<li>
+								<a href={repoUrl} className="button">
+									{"</>"} Code
+								</a>
+							</li>
+						)}
+						{homepageUrl && (
+							<li>
+								<a href={homepageUrl} className="button primary">
+									Live Site
+								</a>
+							</li>
+						)}
 					</ul>
 				</div>
 			</div>
