@@ -1,0 +1,105 @@
+.experience-list-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: var(--size-30px);
+}
+
+.experience-list-item__left {
+  width: 30%;
+}
+
+.experience-list-item__right {
+  width: 70%;
+}
+
+.experience__position {
+  font-weight: bold;
+  margin-bottom: var(--size-10px);
+}
+
+.experience__duties {
+  list-style: initial;
+  margin-left: var(--size-30px);
+}
+
+.experience__duties li {
+  margin-bottom: var(--size-10px);
+}
+
+.experience__tools {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.experience__tools li {
+  display: block;
+  margin-right: var(--size-10px);
+}
+
+.experience__tool-color {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.experience__tool-color__css {
+  color: var(--css);
+}
+
+.experience__tool-color__html {
+  color: var(--html);
+}
+
+.experience__tool-color__illustrator {
+  color: var(--illustrator);
+}
+
+.experience__tool-color__javascript {
+  color: var(--javascript);
+}
+
+.experience__tool-color__mongodb {
+  color: var(--mongodb);
+}
+
+.experience__tool-color__nodejs {
+  color: var(--nodejs);
+}
+
+.experience__tool-color__photoshop {
+  color: var(--photoshop);
+}
+
+.experience__tool-color__python {
+  color: var(--python);
+}
+
+.experience__tool-color__react {
+  color: var(--react);
+}
+
+.experience__tool-color__scss {
+  color: var(--scss);
+}
+
+.experience__tool-color__typescript {
+  color: var(--typescript);
+}
+
+.experience__tool-color__wordpress {
+  color: var(--wordpress);
+}
+
+@media screen and (max-width: 425px) {
+  .experience-list-item {
+    display: block;
+  }
+
+  .experience-list-item__left,
+  .experience-list-item__right {
+    width: 100%;
+  }
+
+  .experience-list-item__left {
+    margin-bottom: var(--size-10px);
+  }
+}
