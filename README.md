@@ -1,37 +1,49 @@
-# GeraldineR.com
+<p align="center">
+  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
+    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+  </a>
+</p>
+<h1 align="center">
+  Gatsby Minimal Starter
+</h1>
 
-Personal portfolio site for Geraldine R [@geraldinedesu](https://twitter.com/geraldinedesu). Inspired by old-school Tumblr theme aesthetics where she got her first taste of web design/development.
+## 🚀 Quick start
 
-Check it out at https://geraldiner.com
+1.  **Create a Gatsby site.**
 
+    Use the Gatsby CLI to create a new site, specifying the minimal starter.
 
+    ```shell
+    # create a new Gatsby site using the minimal starter
+    npm init gatsby
+    ```
 
+2.  **Start developing.**
 
+    Navigate into your new site’s directory and start it up.
 
+    ```shell
+    cd my-gatsby-site/
+    npm run develop
+    ```
 
+3.  **Open the code and start customizing!**
 
+    Your site is now running at http://localhost:8000!
 
+    Edit `src/pages/index.js` to see your site update in real-time!
 
-## Other Projects
+4.  **Learn more**
 
-Check out other stuff I've worked on:
+    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 
-**Minute To Win It Games API & Wiki**: https://github.com/geraldiner/min-to-win
+## 🚀 Quick start (Netlify)
 
-**Rehabitter:** https://github.com/geraldiner/rehabitter
+Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
 
-**Snapchat Clone:** https://github.com/geraldiner/snapchat-clone
-
-**K.K. Radio:** https://github.com/geraldiner/kk-radio
-
-## Let's Connect!
-
-Let's talk about self-taught programming, experience design, (computer science) education, and/or Animal Crossing:
-
-**Twitter**: [@GeraldineDesu](https://twitter.com/geraldinedesu)
-
-**LinkedIn**: [in/GeraldineR](https://linkedin.com/in/geraldiner)
-
-**Email**: hello [at] geraldiner [dot] com
-
-Currently working full-time at <a target="_blank" href="https://nomnomnow.com">Nom Nom</a>, but always open to any cool, interesting projects!
+[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal)

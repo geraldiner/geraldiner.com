@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Vidaloka&display=swap");
+
+:root {
+  --white: #fafafa;
+  --black: #111111;
+  --light-black: #222222;
+  --lighter-black: #333333;
+  --highlight: #e5ffc3;
+  --watermelon: #fc7a85;
+  --mango: #ffbf34;
+  --sunshine: #fcdc5c;
+  --avocado: #b1c064;
+  --honolulu: #006db0;
+  --dusk: #545883;
+  --css: #563d7c;
+  --html: #e44b23;
+  --illustrator: #f8a829;
+  --javascript: #f1e05a;
+  --mongodb: #00684a;
+  --nodejs: #68a063;
+  --photoshop: #2ea3f7;
+  --python: #3572a5;
+  --react: #61dbfb;
+  --scss: #c6538c;
+  --typescript: #2b7489;
+  --wordpress: #00749c;
+
+  --font-size-small: 14px;
+  --font-size-default: 16px;
+  --line-height-default: 1.6;
+
+  --h-font-default: "Vidaloka";
+
+  --size-10px: 10px;
+  --size-20px: 20px;
+  --size-30px: 30px;
+  --size-50px: 50px;
+}
