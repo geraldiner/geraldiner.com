@@ -6,4 +6,4 @@ Plus, I showcase most of my other work either in [GitHub](https://github.com/ger
 
 There's a couple blurbs about all the things I do, and if you're interested, you'll be directed to where you can learn more.
 
-This is inspired by http://bettermotherfuckingwebsite.com/ and https://mayanwolfe.com/. The animated gradient borders with CSS is by [Julien Thibeaut](https://ibelick.com/blog/create-animated-gradient-borders-with-css).
+This is inspired by http://bettermotherfuckingwebsite.com/ and ([an older version of](https://web.archive.org/web/20250222115945/https://mayanwolfe.com/)) https://mayanwolfe.com/. The animated gradient borders with CSS is by [Julien Thibeaut](https://ibelick.com/blog/create-animated-gradient-borders-with-css).
