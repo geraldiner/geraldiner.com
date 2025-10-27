@@ -1,0 +1,25 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Sidebar from '../components/Sidebar.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import '../styles/global.css';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body class="grid h-full w-full grid-cols-1 gap-10">
+    <div
+      class="mx-auto flex h-full w-full max-w-6xl flex-row gap-20 px-5 pt-8 md:px-20 md:pt-16"
+    >
+      <div class="fixed min-h-dvh w-full max-w-xs">
+        <Sidebar />
+      </div>
+      <div class="ml-96 w-full flex-1">
+        <slot />
+      </div>
+    </div>
+  </body>
+</html>

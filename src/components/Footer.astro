@@ -1,0 +1,42 @@
+---
+const today = new Date();
+import { OTHER_WORK_LINKS } from '../consts';
+import { SOCIAL_LINKS } from '../consts';
+import FooterLinksList from './FooterLinksList.astro';
+import NavLink from './NavLink.astro';
+---
+
+<footer class="w-full px-5 py-10 md:px-20 md:py-20">
+  <div class="mx-auto flex w-full max-w-6xl justify-between">
+    <div class="w-full">
+      <h3 class="!font-semibold">geraldiner</h3>
+      <p class="text-base md:text-lg">
+        &copy; {today.getFullYear()} Geraldine Ragsac. All rights reserved.
+      </p>
+    </div>
+    <div class="grid w-full grid-cols-1 gap-2">
+      <FooterLinksList id="social-links">
+        {
+          SOCIAL_LINKS.map((link) => (
+            <li class="inline-block">
+              <NavLink href={link.url} isExternal={link.isExternal}>
+                {link.label}
+              </NavLink>
+            </li>
+          ))
+        }
+      </FooterLinksList>
+      <FooterLinksList id="other-work-links">
+        {
+          OTHER_WORK_LINKS.map((link) => (
+            <li class="inline-block">
+              <NavLink href={link.url} isExternal={link.isExternal}>
+                {link.label}
+              </NavLink>
+            </li>
+          ))
+        }
+      </FooterLinksList>
+    </div>
+  </div>
+</footer>

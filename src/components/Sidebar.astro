@@ -1,0 +1,42 @@
+---
+import NavLink from './NavLink.astro';
+
+import { OTHER_WORK_LINKS, SOCIAL_LINKS } from '../consts';
+import LinksList from './LinksList.astro';
+---
+
+<aside class="grid w-full grid-cols-1 gap-6">
+  <img
+    class="w-full rounded-full"
+    src="https://avatars.githubusercontent.com/u/7737386"
+    alt=""
+  />
+  <section class="grid grid-cols-1 gap-2">
+    <h1>Geraldine Ragsac</h1>
+    <h2 class="!mb-0">Software Engineer</h2>
+  </section>
+  <LinksList>
+    <span class="mb-4 block" slot="headline">but also...</span>
+    {
+      OTHER_WORK_LINKS.map(({ url, label, isExternal }) => (
+        <li class="inline-block">
+          <NavLink href={url} isExternal={isExternal}>
+            {label}
+          </NavLink>
+        </li>
+      ))
+    }
+  </LinksList>
+  <LinksList>
+    <h2 slot="headline">Let's be friends!</h2>
+    {
+      SOCIAL_LINKS.map(({ url, label, isExternal }) => (
+        <li>
+          <NavLink href={url} isExternal={isExternal}>
+            {label}
+          </NavLink>
+        </li>
+      ))
+    }
+  </LinksList>
+</aside>

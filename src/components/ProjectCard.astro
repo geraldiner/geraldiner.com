@@ -1,0 +1,55 @@
+---
+import type { ImageMetadata } from 'astro';
+import Badge from './Badge.astro';
+import CTALink from './CTALink.astro';
+import { Image } from 'astro:assets';
+
+const { title, hook, image, thumbnailPath, link, techStack } = Astro.props;
+
+type Props = {
+  title: string;
+  hook: string;
+  image?: string;
+  thumbnailPath: string;
+  link: string;
+  techStack: Array<string>;
+};
+
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  '/src/assets/thumbnails/*.{jpeg,jpg,png,gif}'
+);
+if (!images[thumbnailPath]) {
+  console.warn(
+    `"${thumbnailPath}" does not exist in glob: "src/assets/thumbnails/*.{jpeg,jpg,png,gif}"`
+  );
+}
+---
+
+<article class="grid w-full grid-cols-1 gap-10">
+  {image && <img class="rounded-2xl" src={image} alt={title} />}
+  {
+    images[thumbnailPath] && (
+      <Image class="rounded-2xl" src={images[thumbnailPath]()} alt="" />
+    )
+  }
+  <section class="grid grid-cols-1 gap-4">
+    <h3>{title}</h3>
+    <p>{hook}</p>
+    {
+      link && (
+        <CTALink href={link} isExternal={false} color="goldenyellow">
+          View Project ↗
+        </CTALink>
+      )
+    }
+  </section>
+  <ul class="flex w-full flex-wrap gap-2">
+    {
+      techStack.map((item) => (
+        <li>
+          <Badge>{item}</Badge>
+        </li>
+      ))
+    }
+  </ul>
+</article>

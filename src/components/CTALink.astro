@@ -1,0 +1,22 @@
+---
+const { href, isExternal, color = 'mint' } = Astro.props;
+
+type Props = {
+  href: string;
+  isExternal: boolean;
+  color?: 'mint' | 'skyblue' | 'goldenyellow' | 'coral';
+};
+
+const COLORS: Record<string, string> = {
+  mint: 'bg-mint hover:border-mint',
+  skyblue: 'bg-skyblue hover:border-skyblue',
+  goldenyellow: 'bg-goldenyellow hover:border-goldenyellow',
+  coral: 'bg-coral hover:border-coral',
+};
+---
+
+<a
+  class=`inline-block max-w-fit rounded-full border-3 border-transparent hover:bg-transparent px-4 py-3 font-medium text-md ${COLORS[color]}`
+  href={href}
+  target={isExternal ? '_blank' : '_self'}><slot />{isExternal ? ' ↗' : ''}</a
+>
