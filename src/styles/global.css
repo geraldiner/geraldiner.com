@@ -1,0 +1,58 @@
+@import 'tailwindcss';
+
+@theme {
+  --default-font-family: 'Inter', sans-serif;
+
+  --color-*: initial;
+  --color-cream: #fff7e6;
+  --color-mint: #8ec8a8;
+  --color-skyblue: #a3d8f4;
+  --color-goldenyellow: #ffe080;
+  --color-coral: #ffaaa5;
+  --color-lightbrown: #e6e0d4;
+  --color-darkbrown: #3a2e1f;
+  --color-black: #333333;
+  --color-white: #fffcfc;
+}
+
+body {
+  @apply bg-cream text-base text-black md:text-xl;
+}
+
+h1 {
+  @apply text-2xl font-bold md:text-4xl;
+}
+
+h2 {
+  @apply mb-4 text-xl font-medium md:mb-6 md:text-3xl;
+}
+
+h3 {
+  @apply mb-2 text-base font-bold md:mb-4 md:text-2xl;
+}
+
+h3.overview-headline {
+  @apply mb-0.5 text-base;
+}
+
+p {
+  @apply mb-4 md:mb-5;
+}
+
+.project-page {
+  ul {
+    @apply my-4 ml-10 list-disc;
+  }
+
+  ul > li {
+    @apply my-1;
+  }
+
+  pre {
+    @apply my-5 h-max w-full rounded-lg p-10;
+  }
+
+  img {
+    @apply my-5 h-auto w-full rounded-lg;
+  }
+}

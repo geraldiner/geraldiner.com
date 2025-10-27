@@ -1,27 +1,3 @@
-# My Website
+# geraldiner.com
 
-Usually I use my website as a guinea pig for new technologies I'm learning. But now I think it's just too much work to keep up.
-
-Plus, I showcase most of my other work either in [GitHub](https://github.com/geraldiner) (software engineering, web development) or on [Instagram](https://instagram.com/geraldinedesu) (crochet), so I'm treating this more as a waypoint.
-
-There's a couple blurbs about all the things I do, and if you're interested, you'll be directed to where you can learn more.
-
-This is inspired by http://bettermotherfuckingwebsite.com/ and ([an older version of](https://web.archive.org/web/20250222115945/https://mayanwolfe.com/)) https://mayanwolfe.com/. The animated gradient borders with CSS is by [Julien Thibeaut](https://ibelick.com/blog/create-animated-gradient-borders-with-css).
-
-## 🚀 Other Projects
-
-Check out other stuff I've worked on:
-
-**Reuben Sandwiches**: https://github.com/geraldiner/reuben-sandwiches
-
-**Nook Music**: https://github.com/geraldiner/nook-music
-
-**Animal Crossing API**: https://github.com/geraldiner/ac-api
-
-## 🤙 Let's connect
-
-- Website: [geraldiner.com](https://geraldiner.com)
-- Resume: [Geraldine R](https://geraldiner.com/GeraldineRagsac_Resume.pdf)
-- LinkedIn: [in/geraldiner](https://linkedin.com/in/geraldiner)
-- Sometimes I write: [@geraldiner](https://geraldiner.hashnode.dev)
-- For crochet work: [@geraldinedesu](https://instagram.com/geraldinedesu)
+Trying out Astro for my website, using my projects for content-driven development. ✌

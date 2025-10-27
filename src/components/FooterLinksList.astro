@@ -1,0 +1,11 @@
+---
+const { id } = Astro.props;
+---
+
+<section>
+  <nav id={id}>
+    <ul class="flex flex-col gap-5 md:flex-row">
+      <slot />
+    </ul>
+  </nav>
+</section>

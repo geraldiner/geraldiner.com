@@ -1,0 +1,35 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import HeroHeader from '../components/HeroHeader.astro';
+import HomeFooter from '../components/HomeFooter.astro';
+import Sidebar from '../components/Sidebar.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import '../styles/global.css';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <div
+      class="mx-auto flex h-full w-full max-w-6xl flex-row gap-8 px-5 pt-8 md:gap-20 md:px-20 md:pt-16"
+    >
+      <div class="hidden md:fixed md:block md:min-h-dvh md:max-w-xs">
+        <Sidebar />
+      </div>
+      <div class="w-full">
+        <div class="w-full md:hidden">
+          <HeroHeader />
+        </div>
+        <div class="flex-1 md:ml-96">
+          <slot />
+        </div>
+        <div class="w-full md:hidden">
+          <HomeFooter />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
