@@ -1,0 +1,50 @@
+---
+const today = new Date();
+import { OTHER_WORK_LINKS } from '../consts';
+import { SOCIAL_LINKS } from '../consts';
+import FooterLinksList from './FooterLinksList.astro';
+import NavLink from './NavLink.astro';
+---
+
+<footer class="w-full px-5 py-10 md:px-20 md:py-20">
+  <div
+    class="mx-auto flex w-full max-w-6xl flex-col justify-between md:flex-row"
+  >
+    <div class="mb-6 w-full">
+      <h3 class="!font-semibold">geraldiner</h3>
+      <p class="text-base md:text-lg">
+        &copy; {today.getFullYear()} Geraldine Ragsac. All rights reserved.
+      </p>
+    </div>
+    <div class="grid w-full grid-cols-2 content-start gap-6 md:grid-cols-1">
+      <div class="grid grid-cols-1 content-start gap-2">
+        <h4 class="text-sm font-bold uppercase md:sr-only">Social</h4>
+        <FooterLinksList id="social-links">
+          {
+            SOCIAL_LINKS.map((link) => (
+              <li class="inline-block">
+                <NavLink href={link.url} isExternal={link.isExternal}>
+                  {link.label}
+                </NavLink>
+              </li>
+            ))
+          }
+        </FooterLinksList>
+      </div>
+      <div class="grid grid-cols-1 content-start gap-2">
+        <h4 class="text-sm font-bold uppercase md:sr-only">Other Work</h4>
+        <FooterLinksList id="other-work-links">
+          {
+            OTHER_WORK_LINKS.map((link) => (
+              <li class="inline-block">
+                <NavLink href={link.url} isExternal={link.isExternal}>
+                  {link.label}
+                </NavLink>
+              </li>
+            ))
+          }
+        </FooterLinksList>
+      </div>
+    </div>
+  </div>
+</footer>

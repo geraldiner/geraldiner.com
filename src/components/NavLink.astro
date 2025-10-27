@@ -1,0 +1,14 @@
+---
+const { href, isExternal } = Astro.props;
+
+type Props = {
+  href: string;
+  isExternal?: boolean;
+};
+---
+
+<a
+  class="hover:underline hover:underline-offset-4"
+  href={href}
+  target={isExternal ? '_blank' : '_self'}><slot />{isExternal ? ' ↗' : ''}</a
+>

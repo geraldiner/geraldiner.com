@@ -1,0 +1,36 @@
+---
+import { getCollection } from 'astro:content';
+import ProjectCard from './ProjectCard.astro';
+import CTALink from './CTALink.astro';
+
+const projects = (
+  await getCollection('projects', (entry) => entry.data.featured > 0)
+).sort((a, b) => a.data.featured - b.data.featured);
+---
+
+<section id="projects">
+  <h2>projects</h2>
+  <ul class="grid grid-cols-1 gap-10">
+    {
+      projects.slice(0, 3).map((project) => {
+        return (
+          <li class="block">
+            <ProjectCard
+              title={project.data.title}
+              hook={project.data.hook}
+              image={project.data.coverImage?.src}
+              thumbnailPath={`/src/assets/thumbnails/${project.id}.png`}
+              link={`/projects/${project.id}`}
+              techStack={project.data.techStack}
+            />
+          </li>
+        );
+      })
+    }
+  </ul>
+  <div class="py-12">
+    <CTALink href="https://github.com/geraldiner" isExternal={true}
+      >View More on GitHub
+    </CTALink>
+  </div>
+</section>
