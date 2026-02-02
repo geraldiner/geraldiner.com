@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --color-black: #000000;
+  --color-off-black: #2b2b2b;
+  --color-dark-black: #212121;
+  --color-off-white: #fafafa;
+  --color-dark-white: #e1e1e1;
+  --color-white: #ffffff;
+  --color-red: #ffaaa5;
+  --color-yellow: #ffe080;
+  --color-dark-yellow: #f4c74e;
+  --color-green: #70d6a0;
+  --color-blue: #a3d8f4;
+  --color-beige: #e6e0d4;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  @apply text-off-black bg-white dark:text-white dark:bg-off-black;
+}
+
+main header {
+  @apply pt-24 grid grid-cols-1 gap-5;
+}
+
+main section {
+  @apply pt-20 grid grid-cols-1 gap-5;
+}
+
+main section h2 {
+  @apply text-2xl uppercase tracking-wide;
+}
+
+main h3 {
+  @apply text-lg font-bold mb-4;
+}
+
+a {
+  @apply underline;
+}
+
+a:hover {
+  @apply underline underline-offset-4;
+}
+
+nav a:hover {
+  @apply font-semibold;
+}
+
+p {
+  @apply mb-4;
+}
+
+ul {
+  @apply ml-8 list-disc;
+}

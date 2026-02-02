@@ -1,0 +1,44 @@
+{
+  "nav": [
+    {
+      "label": "geraldiner",
+      "link": "#top",
+      "isIndex": true
+    },
+    {
+      "label": "About",
+      "link": "#about"
+    },
+    {
+      "label": "Experience",
+      "link": "#experience"
+    },
+    {
+      "label": "Projects",
+      "link": "#projects"
+    },
+    {
+      "label": "View Resume",
+      "link": "/GeraldineRagsac_Resume.pdf",
+      "isIndex": false,
+      "isCTA": true
+    }
+  ],
+  "contactLinks": [
+    {
+      "label": "hello [at] geraldiner [dot] com"
+    },
+    {
+      "label": "LinkedIn",
+      "link": "https://linkedin.com/in/geraldiner"
+    },
+    {
+      "label": "GitHub",
+      "link": "https://github.com/geraldiner"
+    },
+    {
+      "label": "Tech Blog",
+      "link": "https://geraldiner.hashnode.dev"
+    }
+  ]
+}
