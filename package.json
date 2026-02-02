@@ -1,34 +1,30 @@
 {
   "name": "geraldiner.com",
-  "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "private": true,
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro",
-    "lint": "eslint . --fix-dry-run",
-    "lint:fix": "eslint . --fix",
-    "format": "prettier --write ."
+    "dev": "tinacms dev -c \"next dev\"",
+    "build": "tinacms build && next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.3.8",
-    "@astrojs/netlify": "^6.6.0",
-    "@astrojs/rss": "^4.0.13",
-    "@astrojs/sitemap": "^3.6.0",
-    "@tailwindcss/vite": "^4.1.16",
-    "astro": "^5.15.1",
-    "rehype-external-links": "^3.0.0",
-    "sharp": "^0.34.3",
-    "tailwindcss": "^4.1.16"
+    "next": "^16.1.6",
+    "react": "^18",
+    "react-dom": "^18",
+    "tinacms": "^3.4.1"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^8.46.2",
-    "eslint": "^9.38.0",
-    "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-astro": "^1.4.0",
-    "prettier": "^3.6.2",
-    "prettier-plugin-astro": "^0.14.1",
-    "prettier-plugin-tailwindcss": "^0.7.1"
+    "@tailwindcss/postcss": "^4.1.18",
+    "@tinacms/cli": "^2.1.4",
+    "@types/node": "^20.19.31",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "clsx": "^2.1.1",
+    "eslint": "^9.39.2",
+    "eslint-config-next": "^16.1.6",
+    "postcss": "^8",
+    "tailwindcss": "^4.1.18",
+    "typescript": "^5"
   }
 }
