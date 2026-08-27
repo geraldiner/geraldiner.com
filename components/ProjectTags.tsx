@@ -1,7 +1,13 @@
 import clsx from "clsx";
 
 // TODO: Turn into a global config
-const LANGUAGES = ["JavaScript", "TypeScript", "Python"] as const;
+const LANGUAGES = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "TypeScript",
+  "Python",
+] as const;
 
 const FRONTEND = ["React", "Tailwind CSS", "Vite", "Material UI"] as const;
 
