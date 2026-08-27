@@ -45,6 +45,11 @@ blocks:
         liveSiteLink: 'https://ac-api.netlify.app'
         sourceCodeLink: 'https://github.com/geraldiner/ac-api#animal-crossing-api'
         technologies: 'TypeScript, React, Tailwind CSS, Next.js, Clerk, MongoDB, REST API, Netlify, Serverless Functions, Blob Storage'
+      - projectName: Reuben Sandwiches
+        projectDescription: A curated guide to Raleigh’s top Reuben sandwiches
+        liveSiteLink: 'https://geraldiner.github.io/reuben-sandwiches/'
+        sourceCodeLink: 'https://github.com/geraldiner/reuben-sandwiches/'
+        technologies: 'HTML, Tailwind CSS, Astro, GitHub Pages, GitHub Actions'
       - projectName: MinToWin Wiki & API
         projectDescription: ' A wiki for Minute to Win It games with REST API included.'
         liveSiteLink: 'https://min-to-win.netlify.app'
