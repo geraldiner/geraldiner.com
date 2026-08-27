@@ -11,7 +11,7 @@ blocks:
   - sectionTitle: About
     body: "Oh, hi! I’m Geraldine! ✨ I like building tools that make learning and everyday life a little easier.\n\nWith a background in UX design and teaching, everything I build is shaped by empathy, clarity, and accessibility. My favorite projects are mission-driven, combining usability with thoughtful design.\n\nIn free time, I enjoy playing video games, crocheting, and all things that spark joy. \U0001F496\n\nCan you guess my 2 truths and 1 lie before your reach the bottom?\n\n* My last name means “joy” or “happiness”\n* I’m a middle child with 3 brothers and 6 sisters\n* I crocheted my own wedding dress\n"
     _template: aboutBlock
-  - sectionTitle: Experience
+  - sectionTitle: Work Experience
     experiences:
       - role: Software Engineer
         employer:
@@ -21,17 +21,6 @@ blocks:
         duration: 4 years
         description: |
           Leading cross-functional initiatives that improve customer and internal platforms, reduce technical debt, and empower marketing, CX, and brand efforts.
-      - role: Software Engineer
-        employer:
-          company: 100Devs
-          link: ''
-        featuredProject:
-          projectName: MinToWin Wiki & API
-          projectLink: 'https://min-to-win.netlify.app'
-        dateRange: 2021 - 2022
-        duration: 1 year
-        description: |
-          Built and deployed end-to-end web applications with React, Node.js, and MongoDB while mentoring early-career engineers through code reviews and job application guidance.
       - role: Web Designer & Developer
         employer:
           company: Shepherd Research Lab
