@@ -9,7 +9,7 @@ blocks:
     resume: /GeraldineRagsac_Resume.pdf
     _template: headerBlock
   - sectionTitle: About
-    body: "Oh, hi! I’m Geraldine! ✨ I'm a software engineer who likes building tools that make learning and everyday life a little easier.\n\nWith a background in UX design and teaching, empathy, clarity, and accessibility shape everything I build. I enjoy working across disciplines to turn complex problems into thoughtful, user-centered experiences.\n\nIn my free time, I enjoy playing video games, crocheting, and all things that spark joy. \U0001F496\n\nCan you guess my 2 truths and 1 lie before your reach the bottom?\n\n* My last name means “joy” or “happiness”\n* I’m a middle child with 3 brothers and 6 sisters\n* I crocheted my own wedding dress\n"
+    body: "Oh, hi! I’m Geraldine! ✨ I'm a software engineer who likes building tools that make learning and everyday life a little easier.\n\nWith a background in UX design and teaching, empathy, clarity, and accessibility shape everything I build. I like exploring ideas by making things and sharing what I learn along the way.\n\nIn my free time, I enjoy playing video games, crocheting, and all things that spark joy. \U0001F496\n\nCan you guess my 2 truths and 1 lie before you reach the bottom?\n\n* My last name means “joy” or “happiness”\n* I’m a middle child with 3 brothers and 6 sisters\n* I crocheted my own wedding dress\n"
     _template: aboutBlock
   - sectionTitle: Work Experience
     experiences:
