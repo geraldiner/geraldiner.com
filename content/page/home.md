@@ -9,7 +9,7 @@ blocks:
     resume: /GeraldineRagsac_Resume.pdf
     _template: headerBlock
   - sectionTitle: About
-    body: "I build software for people, fueled by curiosity and a love of creating. :)\n\nWith a background in user-centered design, education, and creative work, I’m curious about how people interact with technology and how to make those experiences better.\n\nOutside of work, I enjoy experimenting with personal projects and sharing what I learn on my tech blog.\n\nWhen I'm not coding, I also enjoy video games, crochet, and all things that spark joy. \U0001F496\n\nCan you guess my 2 truths and 1 lie before you reach the bottom?\n\n* My last name means “joy” or “happiness”\n* I’m a middle child with 3 brothers and 6 sisters\n* I crocheted my own wedding dress\n"
+    body: "I build software for people, fueled by curiosity and a love of creating. :)\n\nWith a background in user-centered design, education, and creative work, I’m curious about how people interact with technology and how to make those experiences better.\n\nOutside of work, I like experimenting with personal projects and sharing what I learn on my tech blog.\n\nOutside of coding, I also enjoy video games, crochet, and all things that spark joy. \U0001F496\n\nCan you guess my 2 truths and 1 lie before you reach the bottom?\n\n* My last name means “joy” or “happiness”\n* I’m a middle child with 3 brothers and 6 sisters\n* I crocheted my own wedding dress\n"
     _template: aboutBlock
   - sectionTitle: Work Experience
     experiences:
