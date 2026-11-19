@@ -35,8 +35,6 @@ blocks:
         duration: 1 year
         description: |
           Completed software engineering training focused on JavaScript, React, HTML, CSS, and collaborative development practices using Git and GitHub.
-
-          Designed and built Min to Win, a full-stack web application using React and Node.js to help users discover Minute to Win It games through search and filtering, supported by a documented REST API for querying game data.
       - role: Science Teacher
         employer:
           company: 'James Campbell High School (Teach For America, HI)'
