@@ -47,6 +47,11 @@ blocks:
     _template: experienceBlock
   - sectionTitle: Projects
     projects:
+      - projectName: MinToWin Wiki & API
+        projectDescription: ' A wiki for Minute to Win It games with REST API included.'
+        liveSiteLink: 'https://min-to-win.netlify.app'
+        sourceCodeLink: 'https://github.com/geraldiner/min-to-win#minute-to-win-it-games-api--wiki'
+        technologies: 'JavaScript, React, Material UI, Node.js, Express, REST API, Netlify, Serverless Functions'
       - projectName: Animal Crossing API
         projectDescription: A lightweight API for developers who want to build with Animal Crossing game data.
         liveSiteLink: 'https://ac-api.netlify.app'
@@ -57,11 +62,6 @@ blocks:
         liveSiteLink: 'https://geraldiner.github.io/reuben-sandwiches/'
         sourceCodeLink: 'https://github.com/geraldiner/reuben-sandwiches/'
         technologies: 'HTML, Tailwind CSS, Astro, GitHub Pages, GitHub Actions'
-      - projectName: MinToWin Wiki & API
-        projectDescription: ' A wiki for Minute to Win It games with REST API included.'
-        liveSiteLink: 'https://min-to-win.netlify.app'
-        sourceCodeLink: 'https://github.com/geraldiner/min-to-win#minute-to-win-it-games-api--wiki'
-        technologies: 'JavaScript, React, Material UI, Node.js, Express, REST API, Netlify, Serverless Functions'
     _template: projectBlock
   - sectionTitle: '2 Truths, 1 Lie'
     facts:
