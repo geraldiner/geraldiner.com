@@ -21,13 +21,6 @@ blocks:
         duration: 4 years
         description: |
           Leading cross-functional initiatives that improve customer and internal platforms, reduce technical debt, and empower marketing, CX, and brand efforts.
-      - role: Web Designer & Developer
-        employer:
-          company: Shepherd Research Lab
-        dateRange: 2019 - 2021
-        duration: 2.5 years
-        description: |
-          Built and launched research-focused WordPress websites and led end-to-end branding for academic initiatives, increasing study participation, enabling collaborations, and boosting event engagement.
       - role: Software Engineer
         employer:
           company: 100Devs
@@ -35,6 +28,13 @@ blocks:
         duration: 1 year
         description: |
           Completed software engineering training focused on JavaScript, React, HTML, CSS, and collaborative development practices using Git and GitHub.
+      - role: Web Designer & Developer
+        employer:
+          company: Shepherd Research Lab
+        dateRange: 2019 - 2021
+        duration: 2.5 years
+        description: |
+          Built and launched research-focused WordPress websites and led end-to-end branding for academic initiatives, increasing study participation, enabling collaborations, and boosting event engagement.
       - role: Science Teacher
         employer:
           company: 'James Campbell High School (Teach For America, HI)'
