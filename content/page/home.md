@@ -2,7 +2,7 @@
 blocks:
   - title: Geraldine Ragsac
     subtitle: Software Engineer
-    blurb: "HI \U0001F3DD️ → WA ☔ → NC \U0001F3CE️"
+    blurb: 'Building thoughtful, user-centered experiences.'
     githubUsername: geraldiner
     linkedinProfile: geraldiner
     avatar: /watermark.jpg
