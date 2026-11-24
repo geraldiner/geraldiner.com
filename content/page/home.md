@@ -30,7 +30,7 @@ blocks:
           Completed software engineering training focused on JavaScript, React, HTML, CSS, and collaborative development practices using Git and GitHub.
       - role: Web Designer & Developer
         employer:
-          company: Shepherd Research Lab
+          company: University of Hawai'i Cancer Center
         dateRange: 2019 - 2021
         duration: 2.5 years
         description: |
