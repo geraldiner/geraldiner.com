@@ -1,4 +1,6 @@
+import CTAAnchor from "@/components/CTAAnchor";
 import Footer from "@/components/Footer";
+import NavBar from "@/components/NavBar";
 import "./globals.css";
 
 export default function RootLayout({
@@ -43,6 +45,15 @@ export default function RootLayout({
         <meta property="twitter:description" content={description} />
       </head>
       <body>
+        <CTAAnchor
+          href="#main-content"
+          variant="primary"
+          isExternal={false}
+          className="absolute z-51 -translate-y-full focus:translate-y-0 w-fit!"
+        >
+          Skip to main content
+        </CTAAnchor>
+        <NavBar />
         {children}
         <Footer />
       </body>

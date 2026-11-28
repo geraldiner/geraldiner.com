@@ -17,7 +17,10 @@ export default function NavBar() {
   }, [mobileMenuOpen]);
 
   return (
-    <nav className="w-full max-w-full fixed top-0 z-50 backdrop-blur border-b border-black/5 dark:border-white/5">
+    <nav
+      className="w-full max-w-full fixed top-0 z-50 backdrop-blur border-b border-black/5 dark:border-white/5"
+      aria-label="navigation"
+    >
       <div className="w-full md:max-w-4xl mx-auto flex justify-between items-center gap-4 px-4 py-3">
         {homeItem && (
           <a
@@ -62,7 +65,10 @@ export default function NavBar() {
               {ctaItem.label}
             </CTAAnchor>
           )}
-          <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Nav Menu"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -82,7 +88,7 @@ export default function NavBar() {
       </div>
       <div
         className={clsx(
-          "fixed w-full min-h-screen right-0 top-0 bottom-0 bg-off-white/95 z-10 border-t border-t-beige",
+          "sm:hidden fixed w-full min-h-screen right-0 top-0 bottom-0 bg-off-white/95 z-10 border-t border-t-beige",
           "transform transition-all duration-300 ease-in-out top-16",
           mobileMenuOpen ? "transform-none" : "translate-x-full",
         )}

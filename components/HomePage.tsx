@@ -73,7 +73,6 @@ export default function HomePage({ data }: any) {
           case "PageBlocksPhotoGridBlock":
             return (
               <section key={blockIndex}>
-                <h2>{block.sectionTitle}</h2>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
                   {block.photos?.map((photo: any, photoIndex: number) => (
                     <div key={photoIndex} title={photo.altText}>
