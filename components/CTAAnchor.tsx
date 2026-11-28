@@ -12,6 +12,7 @@ export default function CTAAnchor({
   variant,
   className = "",
   children,
+  ariaLabel,
   isExternal = true,
   style = {},
   onClick = undefined,
@@ -20,6 +21,7 @@ export default function CTAAnchor({
   variant: "primary" | "secondary";
   className?: string;
   children: React.ReactNode;
+  ariaLabel?: string;
   isExternal?: boolean;
   style?: React.CSSProperties;
   onClick?: (() => void) | undefined;
@@ -35,6 +37,7 @@ export default function CTAAnchor({
       href={href}
       onClick={onClick}
       {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+      {...(ariaLabel && { "aria-label": ariaLabel })}
       style={style}
     >
       {children}

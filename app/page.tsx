@@ -1,7 +1,6 @@
 "use client";
 
 import BackToTop from "@/components/BackToTop";
-import NavBar from "@/components/NavBar";
 import client from "@/tina/__generated__/client";
 import { useEffect, useState } from "react";
 import HomePage from "../components/HomePage";
@@ -20,10 +19,9 @@ export default function Home() {
   }, []);
 
   return (
-    <main>
+    <main id="main-content">
       {graphQLResponse ? (
         <>
-          <NavBar />
           <div className="w-full md:max-w-2xl mx-auto px-8">
             <HomePage data={graphQLResponse} />
           </div>

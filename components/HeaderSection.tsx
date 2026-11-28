@@ -31,6 +31,7 @@ export default function HeaderSection({ block }: any) {
           href={`https://linkedin.com/in/${block.linkedinProfile}`}
           variant="secondary"
           className="w-fit!"
+          ariaLabel="LinkedIn Profile"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -48,6 +49,7 @@ export default function HeaderSection({ block }: any) {
           href={`https://github.com/${block.githubUsername}`}
           variant="secondary"
           className="w-fit!"
+          ariaLabel="GitHub profile"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
